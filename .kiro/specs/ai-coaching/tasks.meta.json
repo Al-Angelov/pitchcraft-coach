@@ -1,0 +1,428 @@
+{
+  "pbtResults": {
+    "4.2 Write property tests for TranscriptionService": {
+      "status": "passed",
+      "lastRunTimestamp": 1785934282120
+    },
+    "3.3 Write property tests for AudioCaptureService": {
+      "status": "passed",
+      "lastRunTimestamp": 1785934513812
+    },
+    "7.4 Write property tests for StageController recording integration": {
+      "status": "passed",
+      "lastRunTimestamp": 1785934884049
+    },
+    "6.3 Write property tests for RecordingPanelController": {
+      "status": "passed",
+      "lastRunTimestamp": 1785934893800
+    }
+  },
+  "executionHistory": {
+    "1.1 Add Recording Panel HTML inside the Stage section": [
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933375816
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933397385
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933582628
+      }
+    ],
+    "1.2 Add API Key Modal HTML inside the Stage section": [
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933376597
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933398159
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933583316
+      }
+    ],
+    "1.3 Add Loading Overlay HTML inside the Stage section": [
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933377367
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933398971
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933584138
+      }
+    ],
+    "1.4 Add Record button to session controls": [
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933377734
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933400076
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933584989
+      }
+    ],
+    "2.1 Add Recording Panel and waveform CSS": [
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933378106
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933590144
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933759719
+      }
+    ],
+    "2.2 Add API Key Modal and Loading Overlay CSS": [
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933378501
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933590798
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933760239
+      }
+    ],
+    "3.1 Create AudioCaptureService plain object in the inline script": [
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933378699
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933765879
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785934016937
+      }
+    ],
+    "3.2 Implement AudioCaptureService start/stop/release methods": [
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933378902
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785934024505
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785934333469
+      }
+    ],
+    "3.3 Write property tests for AudioCaptureService": [
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933379303
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785934341213
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785934529437
+      }
+    ],
+    "4.1 Create TranscriptionService plain object in the inline script": [
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933379487
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933766766
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785934018143
+      }
+    ],
+    "4.2 Write property tests for TranscriptionService": [
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933379675
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785934025404
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785934335342
+      }
+    ],
+    "5. Checkpoint - Verify services": [
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933379953
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785934951932
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785935005550
+      }
+    ],
+    "6.1 Create RecordingPanelController plain object in the inline script": [
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933380124
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785934342009
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785934530524
+      }
+    ],
+    "6.2 Implement RecordingPanelController stop, API key, loading, and transcript flows": [
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933380365
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785934536070
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785934752864
+      }
+    ],
+    "6.3 Write property tests for RecordingPanelController": [
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933380556
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785934759445
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785934940465
+      }
+    ],
+    "7.1 Extend AppState.session with recording fields": [
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933380770
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933767640
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785934019041
+      }
+    ],
+    "7.2 Modify StageController to show/hide Record button": [
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933381009
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785934026420
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785934335686
+      }
+    ],
+    "7.3 Modify StageController.endSession() for auto-stop and transcript persistence": [
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933381177
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785934536949
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785934753783
+      }
+    ],
+    "7.4 Write property tests for StageController recording integration": [
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933381466
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785934760219
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785934941340
+      }
+    ],
+    "8.1 Initialize AudioCaptureService, TranscriptionService, and RecordingPanelController": [
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933381735
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785934761045
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785934942190
+      }
+    ],
+    "9. Final checkpoint - Full integration": [
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933381903
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785935010362
+      },
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785935070322
+      }
+    ],
+    "1. Add HTML markup for recording panel, API key modal, and loading overlay": [
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933585358
+      }
+    ],
+    "2. Add CSS styles for recording panel, waveform, API key modal, and loading overlay": [
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785933760561
+      }
+    ],
+    "4. Implement TranscriptionService": [
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785934336002
+      }
+    ],
+    "3. Implement AudioCaptureService": [
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785934529638
+      }
+    ],
+    "6. Implement RecordingPanelController": [
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785934940774
+      }
+    ],
+    "7. Extend StageController and AppState for recording integration": [
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785934941478
+      }
+    ],
+    "8. Wire services and controller in DOMContentLoaded handler": [
+      {
+        "executionId": "a699054e-8bc9-4d17-be01-33e2943bcb7c",
+        "chatSessionId": "sess_c73ead04-5cc3-4fb0-836a-eca6dee158be",
+        "timestamp": 1785934942439
+      }
+    ]
+  }
+}

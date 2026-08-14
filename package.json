@@ -1,0 +1,18 @@
+{
+  "name": "pitchcraft-coach",
+  "version": "1.0.0",
+  "description": "PitchCraft & Eloquence Studio",
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "test": "vitest --run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^1.6.0",
+    "fast-check": "^3.22.0",
+    "jsdom": "^24.0.0",
+    "vercel": "^59.0.0",
+    "vitest": "^1.6.0"
+  }
+}

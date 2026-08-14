@@ -1,1 +1,22 @@
-.vercel
+# Dependencies
+node_modules/
+
+# IDE / Editor
+.vscode/
+*.swp
+*.swo
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Environment
+.env
+.env.local
+
+# Build output
+dist/
+build/
+
+# Vercel
+.vercel/

@@ -1,0 +1,1901 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Create `index.html` with `<!DOCTYPE html>`, `<head>` metadata, and Google Fonts `<link>` for Playfair Display and Inter (font-display: swap)": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620959374
+      },
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620997601
+      },
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785621108678
+      }
+    ],
+    "1.2 Add all CSS custom properties inside a `<style>` block — landing palette, studio palette, semantic tokens, type scale, spacing tokens, and animation tokens": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620960130
+      },
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620998029
+      },
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785621110264
+      }
+    ],
+    "1.3 Write layout CSS: container max-width (72rem), module padding, responsive grid with `minmax(0, 1fr)`, single-column fallback at 375px": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620960687
+      },
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620998987
+      },
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785621111250
+      }
+    ],
+    "2.1 Add `#landing` section to `<body>`: wordmark \"Pitch & Eloquence.\", subtitle, painterly full-bleed background, and \"Enter the Studio\" `<button>`": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620961092
+      },
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785621116761
+      },
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785621644261
+      }
+    ],
+    "2.2 Add landing line-art/SVG illustration element and CSS for the oil-painting-style background (radial gradients or CSS background layers simulating ochre/umber depth)": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620961531
+      },
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785621117807
+      },
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785621645614
+      }
+    ],
+    "2.3 Write unit test: landing screen renders wordmark, subtitle, and CTA button; CTA is keyboard focusable": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620961952
+      },
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785621654546
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747143373
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747172201
+      },
+      {
+        "executionId": "5b5c2e1b-61d6-48e3-bae4-d0da6a4b7540",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785748254786
+      }
+    ],
+    "3.1 Add `#studio` wrapper (hidden by default), `#nav` tab bar with four `<button role=\"tab\">` elements (Stage, Library, Navigator, Archetypes), and four `<section>` module containers (`#stage`, `#library`, `#navigator`, `#archetypes`)": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620962389
+      },
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785621118526
+      },
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785621646917
+      }
+    ],
+    "3.2 Add CSS for module show/hide transitions (opacity + transform, 250ms ease via `--transition-base`) and nav tab active states": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620962866
+      },
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785621119874
+      },
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785621648262
+      }
+    ],
+    "3.3 Write unit test: all four nav tabs present; default active module is `#stage`; studio section hidden on initial load": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620963234
+      },
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785621655256
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747144314
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747175664
+      },
+      {
+        "executionId": "5b5c2e1b-61d6-48e3-bae4-d0da6a4b7540",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785748258751
+      }
+    ],
+    "4.1 Write `SESSION_MODES` array — 5 `SessionMode` objects with `id`, `label`, `durationSeconds`, `isFreeMode`, and `phases` arrays matching the design phase table": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620963551
+      },
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785621656284
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747144793
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747178940
+      },
+      {
+        "executionId": "5b5c2e1b-61d6-48e3-bae4-d0da6a4b7540",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785748263985
+      }
+    ],
+    "4.2 Write `CURVEBALL_POOL` array — minimum 20 `Curveball` objects across 4 categories (skepticism, clarification, pivot, personal-challenge), each with non-empty `prompt` and `advice`": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620963890
+      },
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785621657285
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747145145
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747182382
+      },
+      {
+        "executionId": "5b5c2e1b-61d6-48e3-bae4-d0da6a4b7540",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785748268179
+      }
+    ],
+    "4.3 Write `LESSON_CATALOG` array — minimum 10 pre-authored `Lesson` objects across all 4 categories (ted-talk, book-summary, psychology, personal-note), each with `keyTakeaways` (min 3) and `actionableTechniques` (min 2)": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620964237
+      },
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785621658392
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747145529
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747187470
+      },
+      {
+        "executionId": "5b5c2e1b-61d6-48e3-bae4-d0da6a4b7540",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785748273391
+      }
+    ],
+    "4.4 Write `GOALS` array — 5 `Goal` objects (funding-pitch, technical-explanation, casual-networking, inspirational-talk, job-interview), each with ordered `lessonIds` and `tips` (min 3)": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620964682
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747145837
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747191131
+      },
+      {
+        "executionId": "5b5c2e1b-61d6-48e3-bae4-d0da6a4b7540",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785748280776
+      },
+      {
+        "executionId": "69bb5648-fc63-4aee-b40c-6123a4669e00",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785748633804
+      }
+    ],
+    "4.5 Write `ARCHETYPES` array — minimum 4 `Archetype` objects (The Visionary, The Deep-Tech Educator, The Empathetic Storyteller, The Challenger), each with all required fields and a valid `mappedGoalId`": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620965087
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747146115
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747194778
+      },
+      {
+        "executionId": "5b5c2e1b-61d6-48e3-bae4-d0da6a4b7540",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785748286006
+      },
+      {
+        "executionId": "69bb5648-fc63-4aee-b40c-6123a4669e00",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785748639821
+      }
+    ],
+    "5.1 Write `AppState` object with all fields from the design (`screen`, `activeModule`, `session`, `activeGoal`, `openLessonId`, `openArchetypeId`, `notes`, `searchQuery`) and an `init()` that sets default values": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620965422
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747146293
+      },
+      {
+        "executionId": "69bb5648-fc63-4aee-b40c-6123a4669e00",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785748648324
+      },
+      {
+        "executionId": "69bb5648-fc63-4aee-b40c-6123a4669e00",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785748723106
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749010113
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749116964
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749156774
+      }
+    ],
+    "5.2 Write `StorageService` with `saveNotes`, `loadNotes`, and `clearNotes`; wrap all localStorage calls in try/catch; `loadNotes` returns `[]` on any error": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620965933
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747146490
+      },
+      {
+        "executionId": "69bb5648-fc63-4aee-b40c-6123a4669e00",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785748653599
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749011935
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749118557
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749158489
+      }
+    ],
+    "5.3 Write property test for personal note storage round-trip": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620966337
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747146830
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749013617
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749164350
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753329056
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753358833
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753707940
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753741049
+      }
+    ],
+    "5.4 Write unit tests for `StorageService`: empty state when storage cleared; corrupted JSON returns `[]`; unavailable storage returns `[]`": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620966703
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747147052
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749015864
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749166012
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753329608
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753362734
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753708552
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753744506
+      }
+    ],
+    "6.1 Write `AccessibilityService`: add two ARIA live region `<div>`s to the DOM (one `aria-live=\"polite\"`, one `aria-live=\"assertive\"`); implement `announce(text, politeness)`, `moveFocusTo(element)`, `trapFocus(container)`, and `releaseFocus()`": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620967195
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747147304
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749017854
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749167668
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753330058
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753366988
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753709090
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753748700
+      }
+    ],
+    "6.2 Write `AnimationService`: implement `respectsReducedMotion()` using `window.matchMedia`; implement `transition(element, cssClass, duration, callback)` that skips to callback immediately if reduced motion is active": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620967729
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747147539
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749019934
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749169517
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753330497
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753370930
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753709557
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753752309
+      }
+    ],
+    "6.3 Write unit tests for `AccessibilityService`: focus trap contains Tab within container; `releaseFocus` restores prior focused element; `announce` writes to correct live region": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620968128
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747147711
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749021718
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753330964
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753710070
+      }
+    ],
+    "6.4 Write unit test for `AnimationService`: when `prefers-reduced-motion: reduce` is mocked, `transition()` invokes callback synchronously": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620968731
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747147900
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749023434
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753331383
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753710499
+      }
+    ],
+    "7.1 Write `LandingController.init()`: attach click listener to \"Enter the Studio\" button; write `enter()` that adds `.landing--exiting` CSS class, uses `AnimationService.transition()` for 600ms dissolve, then sets `#landing` to `display: none`, reveals `#studio`, and updates `AppState.screen` to `'studio'`": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620969096
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747148255
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749025128
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753331821
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753710968
+      }
+    ],
+    "7.2 Write unit tests for `LandingController`: clicking CTA hides landing and shows studio; reduced-motion mock causes immediate transition; landing section hidden after enter()": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620969468
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747148523
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749026889
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753332248
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753711402
+      }
+    ],
+    "8. Checkpoint — verify scaffold, data, services, and landing are wired correctly": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620969899
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747148753
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749028615
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753332716
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753711877
+      }
+    ],
+    "9.1 Build `#stage` HTML: mode-selection grid (5 radio-style `<button>` cards), phase breakdown preview panel, session header (displays active Goal name), start/pause/resume/stop controls, phase indicator bar, curveball overlay (`<dialog>` or `role=\"dialog\"` div), pause overlay, and session summary panel": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620970222
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747149416
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749030479
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753333134
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753712286
+      }
+    ],
+    "9.2 Implement `StageController.selectMode(modeId)`: update `AppState.session.mode`, render phase breakdown preview, enable Start button; if Free Mode, hide phase indicator": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620970581
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747149657
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749032920
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753333633
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753712720
+      }
+    ],
+    "9.3 Write unit tests for mode selection: all 5 modes selectable; phase breakdown shown after selection; start button disabled without selection; Free Mode hides phase indicator": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620970988
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747149832
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749036145
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753334054
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753713160
+      }
+    ],
+    "9.4 Write property test for mode → non-empty phases": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620971384
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747150016
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749038970
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753334476
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753713575
+      }
+    ],
+    "10.1 Implement `getCurrentPhase(elapsed, mode)` pure function: iterate mode's phases array and return the phase whose `[startPercent, endPercent)` interval contains `elapsed / totalDuration`": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620971813
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747150182
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749041737
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753334942
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753714100
+      }
+    ],
+    "10.2 Implement `startSession()`: validate mode selected (return + show prompt if not); set `AppState.session.status = 'running'`; start `setInterval` calling `tick()` every 1000ms; initialize `elapsed = 0`, `phasesCompleted = []`, `curveballsShown = []`; schedule first curveball at 20–60% of duration": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620972332
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747150405
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749044773
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753335457
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753714508
+      }
+    ],
+    "10.3 Implement `tick()`: increment elapsed using `performance.now()` delta; update timer display; call `renderPhaseIndicator()`; check if phase transition occurred and call `AccessibilityService.announce()` for phase change; check curveball schedule and call `triggerCurveball()` if due; call `endSession()` when remaining = 0": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620972811
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747150720
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749047625
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753335923
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753714936
+      }
+    ],
+    "10.4 Implement `pauseSession()` and `resumeSession()`: `pauseSession` clears interval, sets status to `'paused'`, shows pause overlay with practical speaking advice; `resumeSession` restarts interval from current elapsed": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620973138
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747150969
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749050505
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753336333
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753715416
+      }
+    ],
+    "10.5 Write property test for phase indicator mapping": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620973565
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747151189
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749053709
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753336736
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753715847
+      }
+    ],
+    "11.1 Implement `triggerCurveball()`: select a curveball ID not in `AppState.session.curveballsShown` (reset pool if exhausted); pause timer; show curveball overlay with prompt and advice; call `AccessibilityService.announce()` on assertive live region; call `AccessibilityService.trapFocus(overlay)`; push ID to `curveballsShown`": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620973919
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747151357
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749056472
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753337154
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753716261
+      }
+    ],
+    "11.2 Implement `dismissCurveball()`: hide overlay; call `AccessibilityService.releaseFocus()`; resume timer; schedule next curveball at 15–40% of remaining time": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620974272
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747151540
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749059754
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753337566
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753716796
+      }
+    ],
+    "11.3 Implement `endSession()`: clear interval; set status `'completed'`; compute uncompleted phases (phases whose `startPercent > elapsed/totalDuration`); call `renderSummary()`": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620974848
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747151750
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749062536
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753338012
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753717267
+      }
+    ],
+    "11.4 Implement `renderSummary()`: display completion state, elapsed time, phases completed, and uncompleted phases list": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620975356
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747151923
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749065692
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753338426
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753717802
+      }
+    ],
+    "11.5 Write property test for session summary containing uncompleted phases": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620975775
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747152103
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749068808
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753338920
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753718321
+      }
+    ],
+    "11.6 Write property test for curveball no-repetition within session": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620976121
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747152263
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749071545
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753339347
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753718829
+      }
+    ],
+    "11.7 Write property test for curveball advice non-empty": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620976578
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747152507
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749074395
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753339752
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753719346
+      }
+    ],
+    "11.8 Write unit tests for timer: countdown accuracy with mocked `performance.now`; pause/resume state; Free Mode count-up; end-session triggers summary; curveball overlay focus management": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620976905
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747152764
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749076574
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753340192
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753719894
+      }
+    ],
+    "12.1 Build `#library` HTML: catalog grid of lesson cards (title, category badge, source reference), search `<input>`, personal notes section with \"Add Note\" form, and lesson detail panel (initially hidden)": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620977312
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747152935
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749078158
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753340597
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753720379
+      }
+    ],
+    "12.2 Implement `LibraryController.init()`, `renderCatalog(query)` (renders all lessons from `LESSON_CATALOG` plus `AppState.notes`), `openLesson(lessonId)` (renders detail panel with title, sourceReference, keyTakeaways, actionableTechniques), and `closeLesson()`": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620977700
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747153217
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749079806
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753341008
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753720809
+      }
+    ],
+    "12.3 Implement `search(query)`: debounced 300ms input handler; case-insensitive substring match against `lesson.title + lesson.content`; call `renderCatalog(query)`; update `AppState.searchQuery`": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620978168
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747153544
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749081540
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753341439
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753721202
+      }
+    ],
+    "12.4 Implement `addNote(text)`: create `Note` object with generated ID (`Date.now()` + random), save via `StorageService.saveNotes`, push to `AppState.notes`, re-render catalog": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620978651
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747153793
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749081847
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753341853
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753721650
+      }
+    ],
+    "12.5 Write property test for search filter soundness and completeness": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620979037
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747153963
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749082106
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753342292
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753722066
+      }
+    ],
+    "12.6 Write property test for lesson detail render fields": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620979448
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747154221
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749082368
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753342734
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753722567
+      }
+    ],
+    "12.7 Write unit tests for Library: empty personal notes state; note persists across simulated reload; lesson detail panel keyboard-accessible; search filters within 300ms debounce": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620979921
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747154611
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749083042
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753343184
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753722979
+      }
+    ],
+    "13.1 Build `#navigator` HTML: goal selection grid (5 `<button>` cards, one active at a time), lesson-path ordered list, and goal-specific tips section": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620980301
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747155073
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749083351
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753343636
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753723427
+      }
+    ],
+    "13.2 Implement `NavigatorController.init()`, `selectGoal(goalId)` (overwrites `AppState.activeGoal`, calls `renderGoalPath()` and `renderTips()`), `getActiveGoal()`, `renderGoalPath()`, and `renderTips()`": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620980729
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747155331
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749083659
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753344187
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753723863
+      }
+    ],
+    "13.3 Write property test for goal path and tips non-empty and distinct": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620981169
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747155579
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749084347
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753344606
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753724274
+      }
+    ],
+    "13.4 Write property test for exactly one active goal": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620981570
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747155834
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749085352
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753344986
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753724715
+      }
+    ],
+    "13.5 Write unit tests for Navigator: changing goal updates lesson path without reload; goal-specific tips differ from general Library; all 5 goals enumerated; only one goal active at a time": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620982008
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747156147
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749086314
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753345389
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753725241
+      }
+    ],
+    "14.1 Build `#archetypes` HTML: grid of archetype cards (name, tagline, inline SVG illustration), archetype detail panel (initially hidden) with all required fields and \"Practice with this style\" button": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620982545
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747156795
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749086719
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753345904
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753725673
+      }
+    ],
+    "14.2 Implement `ArchetypesController.init()`, `openArchetype(archetypeId)` (renders detail panel, calls `AccessibilityService.trapFocus`), `closeArchetype()` (releases focus), and `practiceWithStyle(archetypeId)` (calls `NavigatorController.selectGoal(archetype.mappedGoalId)`, navigates to `#stage`)": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620983221
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747157087
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749086969
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753346307
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753726136
+      }
+    ],
+    "14.3 Write property test for archetype detail required fields": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620983664
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747157365
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749087211
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753346736
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753726564
+      }
+    ],
+    "14.4 Write property test for practice-with-style sets a valid goal": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620984177
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747157805
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749087455
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753347142
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753726982
+      }
+    ],
+    "14.5 Write unit tests for Archetypes: ≥4 cards rendered; detail panel keyboard-accessible; \"Practice with this style\" navigates to Stage and sets Goal": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620984599
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747158530
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749087713
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753347574
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753727503
+      }
+    ],
+    "15. Checkpoint — all modules implemented; run full test suite": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620984971
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747158779
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749088570
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753348015
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753727960
+      }
+    ],
+    "16.1 Add `NavigatorController` initialization to the main `init()` entry point; wire nav tab click handlers to show/hide module sections and update `AppState.activeModule`; display active Goal name in Stage session header whenever `AppState.activeGoal` changes": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620985454
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747159627
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749088814
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753348415
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753728386
+      }
+    ],
+    "16.2 Connect `ArchetypesController.practiceWithStyle()` to `NavigatorController.selectGoal()` and Stage navigation; verify `AppState.activeGoal` flows into Stage header rendering": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620985894
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747160555
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749089142
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753349031
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753728849
+      }
+    ],
+    "16.3 Call all controller `init()` functions in dependency order inside a `DOMContentLoaded` listener; confirm `StorageService.loadNotes()` is called before `LibraryController.renderCatalog()`": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620986384
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747160877
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749089471
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753349424
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753729244
+      }
+    ],
+    "16.4 Write integration tests: navigate from Archetypes → \"Practice with this style\" → Stage shows correct Goal name; Library notes persist and display after simulated reload; full Tab order through all interactive controls": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620986929
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747161270
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749089739
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753349818
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753729654
+      }
+    ],
+    "17.1 Audit and add semantic HTML: verify all `<h1>`–`<h6>` heading hierarchy, landmark regions (`<main>`, `<nav>`, `<section aria-labelledby>`), and list markup (`<ul>/<li>`) for lesson catalogs, lesson paths, and archetype grids": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620987383
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747162130
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749090000
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753350238
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753730154
+      }
+    ],
+    "17.2 Add visible focus indicator styles: 3px solid `--color-focus-ring` outline with 2px offset on all `<button>`, `<input>`, `[role=\"tab\"]`, and card elements; verify each meets WCAG 2.1 AA contrast": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620987799
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747162939
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749092144
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753350669
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753730608
+      }
+    ],
+    "17.3 Audit keyboard Tab order across all four modules; ensure all interactive controls (mode selector buttons, lesson cards, archetype cards, goal buttons, search input, note form) are reachable and activatable via Tab + Enter": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620988212
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747163208
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749094263
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753351114
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753731085
+      }
+    ],
+    "17.4 Write accessibility tests: focus trap in curveball overlay; ARIA live region announces curveball text; timer tick does NOT write to live region; focus indicator meets contrast; keyboard Tab sequence is logical in each module": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620988637
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747163522
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749096217
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753351537
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753731530
+      }
+    ],
+    "18. Final checkpoint — all tests pass and app is fully integrated": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785620989061
+      },
+      {
+        "executionId": "c0ac3e91-8865-4018-bf29-f3e8be60740f",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785747163783
+      },
+      {
+        "executionId": "6394b70e-26e8-4ff9-a1ed-6a69d08caece",
+        "chatSessionId": "sess_8d4f184f-1a4b-48bf-8b95-9a3a3f2ce3aa",
+        "timestamp": 1785749097984
+      },
+      {
+        "executionId": "920252ec-cb82-4534-b86f-846a0f25ef03",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785753351961
+      },
+      {
+        "executionId": "19655bfb-1766-497d-93c4-01fda93abbc1",
+        "chatSessionId": "sess_6e888561-4107-4a1b-a321-3cd14493d1aa",
+        "timestamp": 1785753731998
+      }
+    ],
+    "1. Scaffold `index.html` — document structure, Google Fonts, and CSS custom properties": [
+      {
+        "executionId": "3c28fe98-9cd4-441f-bedf-f77d0caeb6f0",
+        "chatSessionId": "sess_dfb0f8c2-d579-47d2-bb78-47e3861555aa",
+        "timestamp": 1785621111728
+      }
+    ],
+    "2. Build the Landing Screen HTML, CSS, and static visuals": [
+      {
+        "executionId": "5b5c2e1b-61d6-48e3-bae4-d0da6a4b7540",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785748255109
+      }
+    ],
+    "3. Build the Studio interior shell: `#studio`, navigation tabs, and module sections": [
+      {
+        "executionId": "5b5c2e1b-61d6-48e3-bae4-d0da6a4b7540",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785748259031
+      }
+    ],
+    "4. Define all static data constants in the `<script>` module block": [
+      {
+        "executionId": "69bb5648-fc63-4aee-b40c-6123a4669e00",
+        "chatSessionId": "sess_40d6c777-ed1d-44e9-a003-e9fccae52bcc",
+        "timestamp": 1785748641725
+      }
+    ]
+  }
+}

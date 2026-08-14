@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PitchCraft &amp; Eloquence Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Landing Screen — Expanded narrative experience -->
+  <section id="landing" aria-label="Welcome">
+    <!-- Hero panel — original grandiose opening -->
+    <div class="landing__hero">
+      <div class="landing__content">
+        <h1 class="landing__wordmark">Pitch &amp; Eloquence.</h1>
+        <p class="landing__subtitle">The Public Speaking &amp; Psychology Studio</p>
+      </div>
+
+      <svg
+        class="landing__illustration"
+        aria-hidden="true"
+        focusable="false"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 300 300"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <line x1="20" y1="270" x2="280" y2="270" stroke="#d4a843" stroke-width="2.5"/>
+        <line x1="30" y1="230" x2="30" y2="270" stroke="#d4a843" stroke-width="2"/>
+        <line x1="270" y1="230" x2="270" y2="270" stroke="#d4a843" stroke-width="2"/>
+        <line x1="30" y1="230" x2="270" y2="230" stroke="#d4a843" stroke-width="2.5"/>
+        <path d="M130 230 L115 180 L185 180 L170 230 Z" stroke="#e8c46a" stroke-width="2"/>
+        <rect x="108" y="170" width="84" height="14" rx="2" stroke="#e8c46a" stroke-width="2"/>
+        <path d="M135 168 C133 155 133 142 138 135 L150 130 L162 135 C167 142 167 155 165 168" stroke="#e8c46a" stroke-width="2.5"/>
+        <circle cx="150" cy="123" r="13" stroke="#f0d080" stroke-width="2"/>
+        <path d="M137 148 C128 142 118 138 110 140" stroke="#e8c46a" stroke-width="2"/>
+        <path d="M163 148 C172 143 180 141 188 144" stroke="#e8c46a" stroke-width="2"/>
+        <line x1="150" y1="170" x2="150" y2="160" stroke="#c8922a" stroke-width="1.5"/>
+        <circle cx="150" cy="158" r="4" stroke="#c8922a" stroke-width="1.5"/>
+        <path d="M118 100 C112 92 106 86 104 78" stroke="#b8860b" stroke-width="1.5" opacity="0.7"/>
+        <path d="M130 95 C126 85 124 76 126 68" stroke="#b8860b" stroke-width="1.5" opacity="0.7"/>
+        <path d="M143 92 C142 82 144 72 148 64" stroke="#b8860b" stroke-width="1.5" opacity="0.7"/>
+        <path d="M60 10 C80 60 100 90 130 120" stroke="#c8922a" stroke-width="1" opacity="0.4"/>
+        <path d="M240 10 C220 60 200 90 170 120" stroke="#c8922a" stroke-width="1" opacity="0.4"/>
+        <circle cx="60" cy="10" r="5" stroke="#d4a843" stroke-width="1.5" opacity="0.5"/>
+        <circle cx="240" cy="10" r="5" stroke="#d4a843" stroke-width="1.5" opacity="0.5"/>
+        <path d="M10 0 C10 40 22 80 18 140 C16 170 20 200 15 230" stroke="#8b4513" stroke-width="3" opacity="0.6"/>
+        <path d="M290 0 C290 40 278 80 282 140 C284 170 280 200 285 230" stroke="#8b4513" stroke-width="3" opacity="0.6"/>
+        <ellipse cx="55" cy="280" rx="12" ry="8" stroke="#8b6914" stroke-width="1.5" opacity="0.6"/>
+        <ellipse cx="85" cy="284" rx="10" ry="7" stroke="#8b6914" stroke-width="1.5" opacity="0.6"/>
+        <ellipse cx="188" cy="281" rx="11" ry="7" stroke="#8b6914" stroke-width="1.5" opacity="0.5"/>
+        <ellipse cx="245" cy="280" rx="12" ry="8" stroke="#8b6914" stroke-width="1.5" opacity="0.6"/>
+      </svg>
+
+      <!-- Scroll indicator -->
+      <div class="landing__scroll-hint" aria-hidden="true">
+        <span class="landing__scroll-arrow">&#x2193;</span>
+      </div>
+    </div>
+
+    <!-- Story panels — scrapped pages connected by a golden thread -->
+    <div class="landing__story">
+      <!-- The golden thread running through all notes -->
+      <div class="landing__thread" aria-hidden="true"></div>
+
+      <!-- Note 1: The Why (left) -->
+      <article class="landing__note landing__note--left">
+        <div class="landing__note-pin" aria-hidden="true"></div>
+        <div class="landing__note-paper">
+          <h2 class="landing__note-heading">The Why</h2>
+          <p class="landing__note-text">
+            Every brilliant idea that dies in a meeting room, every startup that fails not because the product was wrong but because the pitch was weak, every leader whose vision never reaches the people who need to hear it &mdash;
+          </p>
+          <p class="landing__note-text landing__note-text--emphasis">
+            These are not failures of intellect. They are failures of communication.
+          </p>
+          <div class="landing__note-scratch" aria-hidden="true"></div>
+        </div>
+      </article>
+
+      <!-- Note 2: The Problem (right) -->
+      <article class="landing__note landing__note--right">
+        <div class="landing__note-pin" aria-hidden="true"></div>
+        <div class="landing__note-paper">
+          <h2 class="landing__note-heading">The Gap</h2>
+          <p class="landing__note-text">
+            The gap between having something worth saying and saying it well is the most expensive gap in professional life. We watch it happen every day &mdash; brilliant minds reduced to mumbling slides, visionaries who can't fundraise, experts who can't teach.
+          </p>
+          <p class="landing__note-text landing__note-text--struck">
+            <span aria-hidden="true">Just practice more. You'll figure it out.</span>
+          </p>
+          <div class="landing__note-scratch" aria-hidden="true"></div>
+        </div>
+      </article>
+
+      <!-- Note 3: The Mission (left) -->
+      <article class="landing__note landing__note--left">
+        <div class="landing__note-pin" aria-hidden="true"></div>
+        <div class="landing__note-paper">
+          <h2 class="landing__note-heading">The Mission</h2>
+          <p class="landing__note-text">
+            A private practice ground where psychology meets performance. A studio that doesn't just tell you <em>what</em> to do, but helps you <em>feel</em> what it's like to do it under pressure.
+          </p>
+          <p class="landing__note-text">
+            Timed sessions. Live curveballs. Real psychology. No audience required.
+          </p>
+        </div>
+      </article>
+
+      <!-- Note 4: The Approach (right) -->
+      <article class="landing__note landing__note--right">
+        <div class="landing__note-pin" aria-hidden="true"></div>
+        <div class="landing__note-paper">
+          <h2 class="landing__note-heading">The Approach</h2>
+          <p class="landing__note-text">
+            Decades of research &mdash; Kahneman's peak-end rule, Cuddy's embodied cognition, Sinek's golden circle, cognitive load theory &mdash; distilled into a single practice environment.
+          </p>
+          <p class="landing__note-text landing__note-text--emphasis">
+            Choose a goal. Pick a mode. Step onto the stage.
+          </p>
+          <div class="landing__note-scratch" aria-hidden="true"></div>
+        </div>
+      </article>
+
+      <!-- Note 5: The Belief (left) -->
+      <article class="landing__note landing__note--left">
+        <div class="landing__note-pin" aria-hidden="true"></div>
+        <div class="landing__note-paper">
+          <h2 class="landing__note-heading">The Belief</h2>
+          <p class="landing__note-text">
+            Great speaking is not a gift. It is a practice. Every extraordinary communicator you admire became extraordinary through deliberate repetition, honest reflection, and the courage to be imperfect.
+          </p>
+          <p class="landing__note-text">
+            This studio exists so you can practice in private what you'll perform in public.
+          </p>
+        </div>
+      </article>
+
+      <!-- Final note: Author attribution -->
+      <article class="landing__note landing__note--final">
+        <div class="landing__note-pin" aria-hidden="true"></div>
+        <div class="landing__note-paper landing__note-paper--final">
+          <blockquote class="landing__quote">
+            &ldquo;In an age of infinite noise and shrinking attention, the ability to communicate with clarity, conviction, and compassion is no longer a soft skill &mdash; it is the defining skill of our time.&rdquo;
+          </blockquote>
+          <p class="landing__author">Alexander Angelov</p>
+          <button id="enter-studio" class="landing__cta" type="button">Enter the Studio</button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Persistent top navigation bar — always visible -->
+  <header id="app-header" class="app-header">
+    <button class="app-header__brand" id="brand-home" type="button" aria-label="Return to home">
+      <span class="app-header__brand-text">Pitch &amp; Eloquence.</span>
+    </button>
+    <nav id="nav" role="tablist" aria-label="Studio modules" class="app-header__nav">
+      <button role="tab" id="tab-stage" aria-selected="true" aria-controls="stage" data-module="stage" class="nav__tab nav__tab--active">Stage</button>
+      <button role="tab" id="tab-library" aria-selected="false" aria-controls="library" data-module="library" class="nav__tab">Library</button>
+      <button role="tab" id="tab-navigator" aria-selected="false" aria-controls="navigator" data-module="navigator" class="nav__tab">Navigator</button>
+      <button role="tab" id="tab-archetypes" aria-selected="false" aria-controls="archetypes" data-module="archetypes" class="nav__tab">Archetypes</button>
+    </nav>
+  </header>
+
+  <!-- Main content area — views swap here -->
+  <main id="studio" data-active="false" aria-label="PitchCraft Studio" hidden>
+    <section id="stage" role="tabpanel" aria-labelledby="tab-stage" class="module module--active">
+      <!-- Stage Module — Expanded with centered layout, phase descriptions, curveball styling -->
+      <div class="container stage__container">
+        <!-- Session header: shows active Goal name -->
+        <header class="stage__header">
+          <h2 class="stage__title">Practice Stage</h2>
+          <p class="stage__goal-label" id="stage-goal-label">Select a goal from the Navigator to begin</p>
+          <!-- History Panel toggle -->
+          <button type="button" class="history-toggle-btn" id="history-toggle" aria-expanded="false" aria-controls="history-panel" aria-label="Open session history">
+            <svg class="history-toggle-btn__icon" aria-hidden="true" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="6"/><polyline points="8,4 8,8 11,9.5"/></svg>
+            <span>History</span>
+          </button>
+        </header>
+
+        <!-- History Panel — collapsible left-side session list -->
+        <aside class="history-panel" id="history-panel" aria-label="Past sessions" hidden>
+          <h3 class="history-panel__heading">Past Sessions</h3>
+          <div class="history-panel__list" id="history-list" role="list" aria-label="Session history list">
+            <!-- Rendered dynamically by HistoryPanelController -->
+          </div>
+          <p class="history-panel__empty" id="history-empty" hidden>No past sessions yet. Complete a practice session to see it here.</p>
+        </aside>
+
+        <!-- Mode selection grid — 5 radio-style button cards -->
+        <div class="stage__mode-selection" id="mode-selection">
+          <h3 class="stage__section-heading">Choose Your Session Mode</h3>
+          <p class="stage__section-desc">Each mode structures your practice with timed phases and live curveballs.</p>
+          <div class="grid stage__mode-grid" role="radiogroup" aria-label="Session mode selection">
+            <button type="button" class="stage__mode-card" role="radio" aria-checked="false" data-mode-id="elevator-60">
+              <svg class="stage__mode-icon" aria-hidden="true" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="20" cy="20" r="14"/><polyline points="20,10 20,20 27,23"/></svg>
+              <span class="stage__mode-label">60-Second Elevator Pitch</span>
+              <span class="stage__mode-duration">1 min</span>
+              <span class="stage__mode-desc">Hook &rarr; Problem &rarr; Solution &rarr; CTA</span>
+            </button>
+            <button type="button" class="stage__mode-card" role="radio" aria-checked="false" data-mode-id="startup-5m">
+              <svg class="stage__mode-icon" aria-hidden="true" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="20" cy="14" r="6"/><path d="M10 34 C10 26 30 26 30 34"/><path d="M26 10 L32 4 M32 4 L32 10 M32 4 L26 4"/></svg>
+              <span class="stage__mode-label">5-Minute Startup Demo</span>
+              <span class="stage__mode-duration">5 min</span>
+              <span class="stage__mode-desc">Intro &rarr; Problem &rarr; Solution &rarr; Demo &rarr; CTA</span>
+            </button>
+            <button type="button" class="stage__mode-card" role="radio" aria-checked="false" data-mode-id="presentation-15m">
+              <svg class="stage__mode-icon" aria-hidden="true" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="28" height="20" rx="2"/><line x1="20" y1="26" x2="20" y2="32"/><line x1="14" y1="32" x2="26" y2="32"/><line x1="11" y1="12" x2="24" y2="12"/><line x1="11" y1="16" x2="20" y2="16"/><line x1="11" y1="20" x2="17" y2="20"/></svg>
+              <span class="stage__mode-label">15-Minute Presentation</span>
+              <span class="stage__mode-duration">15 min</span>
+              <span class="stage__mode-desc">Intro &rarr; Context &rarr; Core &rarr; Synthesis &rarr; Close</span>
+            </button>
+            <button type="button" class="stage__mode-card" role="radio" aria-checked="false" data-mode-id="deep-dive-30m">
+              <svg class="stage__mode-icon" aria-hidden="true" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 32 L8 8 L32 8"/><polyline points="12,28 18,20 24,24 32,12"/><circle cx="32" cy="12" r="2"/></svg>
+              <span class="stage__mode-label">30-Minute Deep-Dive</span>
+              <span class="stage__mode-duration">30 min</span>
+              <span class="stage__mode-desc">Full analysis with Q&amp;A prep and multi-phase structure</span>
+            </button>
+            <button type="button" class="stage__mode-card" role="radio" aria-checked="false" data-mode-id="free">
+              <svg class="stage__mode-icon" aria-hidden="true" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 C12 6 6 12 6 20 C6 28 12 34 20 34 C28 34 34 28 34 20"/><path d="M34 20 C34 16 32 12 28 10"/><path d="M20 6 L20 2 M20 6 L24 6"/></svg>
+              <span class="stage__mode-label">Free Mode</span>
+              <span class="stage__mode-duration">&infin;</span>
+              <span class="stage__mode-desc">Unstructured practice &mdash; no timer, no phases, just flow</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Phase breakdown preview panel -->
+        <div class="stage__phase-preview" id="phase-preview" hidden>
+          <h3 class="stage__section-heading">Phase Breakdown</h3>
+          <ol class="stage__phase-list" id="phase-list" aria-label="Session phases">
+            <!-- Populated dynamically by StageController.selectMode() -->
+          </ol>
+        </div>
+
+        <!-- Curveball toggle -->
+        <div class="stage__curveball-toggle" id="curveball-toggle-section">
+          <label class="stage__toggle-label" for="curveball-toggle">
+            <span class="stage__toggle-text">Curveball Questions</span>
+            <span class="stage__toggle-desc">Surprise prompts that test your composure mid-session</span>
+          </label>
+          <button type="button" role="switch" aria-checked="true" class="stage__toggle" id="curveball-toggle">
+            <span class="stage__toggle-track">
+              <span class="stage__toggle-thumb"></span>
+            </span>
+          </button>
+        </div>
+
+        <!-- Session controls (pre-session: Start button only) -->
+        <div class="stage__controls" id="session-controls">
+          <button type="button" class="stage__btn stage__btn--start" id="btn-start" disabled>Start Session</button>
+        </div>
+
+        <!-- Unified Active Session Deck — single timer, waveform, controls -->
+        <div id="active-session-deck" class="active-deck" hidden>
+          <!-- Recording status + single timer -->
+          <div class="active-deck__timer-row">
+            <span class="active-deck__indicator" id="deck-indicator" aria-hidden="true"></span>
+            <span class="active-deck__timer" id="timer-value">00:00</span>
+          </div>
+          <span class="active-deck__timer-label" id="timer-label">remaining</span>
+
+          <!-- Audio waveform visualizer -->
+          <div class="active-deck__waveform" aria-hidden="true">
+            <div class="recording-waveform__bar"></div>
+            <div class="recording-waveform__bar"></div>
+            <div class="recording-waveform__bar"></div>
+            <div class="recording-waveform__bar"></div>
+            <div class="recording-waveform__bar"></div>
+          </div>
+
+          <!-- Phase indicator bar -->
+          <div class="stage__phase-indicator" id="phase-indicator" aria-label="Current session phase">
+            <!-- Rendered dynamically during session -->
+          </div>
+
+          <!-- Action buttons -->
+          <div class="active-deck__actions">
+            <button type="button" class="active-deck__btn active-deck__btn--secondary" id="btn-pause">Pause</button>
+            <button type="button" class="active-deck__btn active-deck__btn--secondary" id="btn-resume" hidden>Resume</button>
+            <button type="button" class="active-deck__btn active-deck__btn--primary" id="btn-stop-recording"
+                    aria-label="Stop recording and analyze speech">Stop &amp; Analyze</button>
+          </div>
+        </div>
+
+        <!-- Hidden elements kept for backward compat with existing JS -->
+        <button type="button" id="btn-stop" hidden aria-hidden="true" style="display:none;">Stop</button>
+        <button type="button" id="btn-record" hidden aria-hidden="true" style="display:none;">Record</button>
+        <div id="recording-panel" hidden aria-hidden="true" style="display:none;">
+          <span id="recording-timer"></span>
+        </div>
+        <div id="timer-display" hidden aria-hidden="true" style="display:none;"></div>
+
+        <!-- Session summary panel -->
+        <div class="stage__summary" id="session-summary" hidden>
+          <h3 class="stage__section-heading">Session Complete</h3>
+          <div id="summary-content">
+            <!-- Rendered by renderSummary() -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Curveball overlay (modal dialog) — styled as an investor question card -->
+      <div class="stage__curveball-overlay" id="curveball-overlay" role="dialog" aria-modal="true" aria-labelledby="curveball-title" hidden>
+        <div class="stage__curveball-panel">
+          <svg class="stage__curveball-badge" aria-hidden="true" viewBox="0 0 48 48" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M24 4 C18 8 14 14 14 20 C14 28 20 32 24 36 C28 32 34 28 34 20 C34 14 30 8 24 4Z" stroke="#c8922a" stroke-width="2"/>
+            <path d="M24 36 L24 44" stroke="#c8922a" stroke-width="2"/>
+            <path d="M20 44 L28 44" stroke="#c8922a" stroke-width="2"/>
+            <path d="M19 18 C19 14 22 12 24 12 C26 12 29 14 29 18" stroke="#d4a843" stroke-width="1.5"/>
+            <line x1="24" y1="22" x2="24" y2="26" stroke="#d4a843" stroke-width="1.5"/>
+            <circle cx="24" cy="29" r="1.2" fill="#d4a843"/>
+          </svg>
+          <h3 class="stage__curveball-title" id="curveball-title">Curveball</h3>
+          <p class="stage__curveball-context">An investor leans forward and asks:</p>
+          <blockquote class="stage__curveball-prompt" id="curveball-prompt"></blockquote>
+          <details class="stage__curveball-advice-details">
+            <summary class="stage__curveball-advice-toggle">Reveal Coaching Advice</summary>
+            <p class="stage__curveball-advice" id="curveball-advice"></p>
+          </details>
+          <button type="button" class="stage__btn stage__btn--dismiss" id="btn-dismiss-curveball">I've Got This &mdash; Continue</button>
+        </div>
+      </div>
+
+      <!-- Session Detail View modal — torn-page review of past session -->
+      <div class="session-detail-overlay" id="session-detail-overlay" role="dialog" aria-modal="true" aria-labelledby="session-detail-title" hidden>
+        <div class="session-detail-panel">
+          <button type="button" class="session-detail__close" id="session-detail-close" aria-label="Close session details">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="3" x2="13" y2="13"/><line x1="13" y1="3" x2="3" y2="13"/></svg>
+          </button>
+          <h3 class="session-detail__title" id="session-detail-title"></h3>
+          <p class="session-detail__meta" id="session-detail-meta"></p>
+
+          <!-- Stats grid -->
+          <div class="session-detail__stat-grid" id="session-detail-stats">
+            <div class="session-detail__stat">
+              <span class="session-detail__stat-value" id="session-detail-duration">--</span>
+              <span class="session-detail__stat-label">Duration</span>
+            </div>
+            <div class="session-detail__stat">
+              <span class="session-detail__stat-value" id="session-detail-curveballs">--</span>
+              <span class="session-detail__stat-label">Curveballs</span>
+            </div>
+          </div>
+
+          <!-- Phases completed -->
+          <div class="session-detail__section">
+            <h4 class="session-detail__section-title">Phases Completed</h4>
+            <ul class="session-detail__phases-list" id="session-detail-phases"></ul>
+          </div>
+
+          <!-- Transcript -->
+          <div class="session-detail__section">
+            <h4 class="session-detail__section-title">Transcript</h4>
+            <div class="session-detail__section-content" id="session-detail-transcript">
+              <p class="session-detail__placeholder">Transcript will be available with AI coaching integration</p>
+            </div>
+          </div>
+
+          <!-- AI Feedback -->
+          <div class="session-detail__section">
+            <h4 class="session-detail__section-title">AI Feedback</h4>
+            <div class="session-detail__section-content" id="session-detail-feedback">
+              <p class="session-detail__placeholder">AI feedback will be available with AI coaching integration</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- API Key Modal — Requirements: 4.1, 4.2 -->
+      <div id="api-key-modal" class="modal-overlay" role="dialog" aria-modal="true"
+           aria-labelledby="api-key-title" hidden>
+        <div class="modal-overlay__content">
+          <h2 id="api-key-title">Enter OpenAI API Key</h2>
+          <p>Your key is used for this session only and is never stored.</p>
+          <form id="api-key-form">
+            <label for="api-key-input" class="sr-only">OpenAI API Key</label>
+            <input id="api-key-input" type="password" placeholder="sk-..."
+                   autocomplete="off" required />
+            <div class="modal-overlay__actions">
+              <button type="submit" class="btn btn--primary">Submit</button>
+              <button type="button" id="btn-cancel-api-key" class="btn btn--secondary">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Loading Overlay — Requirements: 6.1, 6.5 -->
+      <div id="transcription-loading" class="loading-overlay" role="alert" aria-live="assertive" hidden>
+        <div class="loading-overlay__content">
+          <p class="loading-overlay__text">Transcribing your audio waveform...</p>
+          <div class="loading-overlay__animation" aria-hidden="true">
+            <span class="loading-dot"></span>
+            <span class="loading-dot"></span>
+            <span class="loading-dot"></span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section id="library" role="tabpanel" aria-labelledby="tab-library" class="module" hidden>
+      <!-- Library Module — Requirements: 4.1, 4.2, 4.4, 4.5, 7.6 -->
+      <div class="container">
+        <header class="library__header">
+          <h2 class="library__title">Eloquence Library</h2>
+          <p class="library__subtitle">Curated lessons, insights, and your personal notes</p>
+        </header>
+
+        <!-- Search input -->
+        <div class="library__search">
+          <label for="library-search" class="sr-only">Search lessons</label>
+          <input type="search" id="library-search" class="library__search-input" placeholder="Search lessons..." autocomplete="off" />
+        </div>
+
+        <!-- Catalog grid -->
+        <div class="library__catalog" id="library-catalog">
+          <div class="grid library__grid" id="library-grid">
+            <!-- Lesson cards rendered dynamically by LibraryController.renderCatalog() -->
+          </div>
+        </div>
+
+        <!-- Personal notes section -->
+        <div class="library__notes-section" id="notes-section">
+          <h3 class="library__section-heading">Personal Notes</h3>
+          <form class="library__note-form" id="note-form">
+            <label for="note-title" class="sr-only">Note title</label>
+            <input type="text" id="note-title" class="library__note-input" placeholder="Note title" required />
+            <label for="note-content" class="sr-only">Note content</label>
+            <textarea id="note-content" class="library__note-textarea" placeholder="Write your note..." rows="3" required></textarea>
+            <button type="submit" class="library__note-btn">Add Note</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Lesson Reader View — immersive full-screen reading experience -->
+      <div class="reader" id="lesson-detail" role="dialog" aria-modal="true" aria-labelledby="lesson-detail-title" hidden>
+        <div class="reader__header">
+          <button type="button" class="reader__back" id="lesson-detail-close" aria-label="Back to Library">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="12,4 6,10 12,16"/></svg>
+            <span>Back to Library</span>
+          </button>
+        </div>
+        <article class="reader__article">
+          <header class="reader__title-block">
+            <p class="reader__source" id="lesson-detail-source"></p>
+            <h2 class="reader__title" id="lesson-detail-title"></h2>
+          </header>
+          <div class="reader__body" id="lesson-detail-body">
+            <!-- Rendered dynamically: illustration, takeaway cards, techniques, prose -->
+          </div>
+        </article>
+      </div>
+    </section>
+    <section id="navigator" role="tabpanel" aria-labelledby="tab-navigator" class="module" hidden>
+      <!-- Navigator Module — Strategy Dashboard -->
+      <div class="container navigator__dashboard">
+        <header class="navigator__header">
+          <h2 class="navigator__title">Goal Navigator</h2>
+          <p class="navigator__subtitle">Choose a speaking goal to unlock your curated curriculum</p>
+        </header>
+
+        <!-- Two-column layout: goals on left, content on right -->
+        <div class="navigator__layout">
+          <!-- Left: Goal pills -->
+          <aside class="navigator__sidebar">
+            <h3 class="navigator__sidebar-heading">Your Focus</h3>
+            <div class="navigator__goal-pills" id="goal-grid" role="radiogroup" aria-label="Speaking goal selection">
+              <button type="button" class="navigator__pill" role="radio" aria-checked="false" data-goal-id="funding-pitch">
+                <svg class="navigator__pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2 L12 6 M12 18 L12 22 M4.93 4.93 L7.76 7.76 M16.24 16.24 L19.07 19.07 M2 12 L6 12 M18 12 L22 12"/></svg>
+                <span>Funding Pitch</span>
+              </button>
+              <button type="button" class="navigator__pill" role="radio" aria-checked="false" data-goal-id="technical-explanation">
+                <svg class="navigator__pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="4" y="4" width="16" height="12" rx="2"/><line x1="12" y1="16" x2="12" y2="20"/><line x1="8" y1="20" x2="16" y2="20"/></svg>
+                <span>Technical Explanation</span>
+              </button>
+              <button type="button" class="navigator__pill" role="radio" aria-checked="false" data-goal-id="casual-networking">
+                <svg class="navigator__pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="9" cy="8" r="4"/><circle cx="17" cy="10" r="3"/><path d="M2 20 C2 16 6 14 9 14 C12 14 14 15 14 16"/><path d="M14 18 C14 16 15.5 15 17 15 C18.5 15 20 16 20 18"/></svg>
+                <span>Casual Networking</span>
+              </button>
+              <button type="button" class="navigator__pill" role="radio" aria-checked="false" data-goal-id="inspirational-talk">
+                <svg class="navigator__pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2 C8 2 5 5 5 9 C5 14 12 22 12 22 C12 22 19 14 19 9 C19 5 16 2 12 2Z"/><circle cx="12" cy="9" r="3"/></svg>
+                <span>Inspirational Talk</span>
+              </button>
+              <button type="button" class="navigator__pill" role="radio" aria-checked="false" data-goal-id="job-interview">
+                <svg class="navigator__pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="4" y="4" width="16" height="16" rx="2"/><line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="13" x2="13" y2="13"/><line x1="9" y1="17" x2="11" y2="17"/></svg>
+                <span>Job Interview</span>
+              </button>
+            </div>
+          </aside>
+
+          <!-- Right: Curriculum content -->
+          <div class="navigator__main-panel">
+            <!-- Empty state -->
+            <div class="navigator__empty" id="navigator-empty">
+              <p class="navigator__empty-text">Select a goal to reveal your personalized curriculum path and strategy insights.</p>
+            </div>
+
+            <!-- Lesson path as milestone cards -->
+            <div class="navigator__path-section" id="goal-path-section" hidden>
+              <h3 class="navigator__panel-heading">Your Lesson Path</h3>
+              <div class="navigator__roadmap" id="goal-path-list" aria-label="Ordered lesson path">
+                <!-- Milestone cards rendered by NavigatorController.renderGoalPath() -->
+              </div>
+            </div>
+
+            <!-- Goal-specific tips as callout blocks -->
+            <div class="navigator__tips-section" id="goal-tips-section" hidden>
+              <h3 class="navigator__panel-heading">Strategy Insights</h3>
+              <div class="navigator__tips-grid" id="goal-tips-list" aria-label="Goal-specific tips">
+                <!-- Tip callouts rendered by NavigatorController.renderTips() -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="archetypes" role="tabpanel" aria-labelledby="tab-archetypes" class="module" hidden>
+      <!-- Archetypes Module — Requirements: 6.1, 6.2, 6.3, 7.6 -->
+      <div class="container">
+        <header class="archetypes__header">
+          <h2 class="archetypes__title">Speaker Archetypes</h2>
+          <p class="archetypes__subtitle">Discover your speaking style and practice with purpose</p>
+        </header>
+
+        <!-- Archetype cards grid -->
+        <div class="grid archetypes__grid" id="archetypes-grid">
+          <!-- Cards rendered dynamically by ArchetypesController.init() -->
+        </div>
+      </div>
+
+      <!-- Archetype drawer — slides from right, 55% width -->
+      <aside class="archetype-drawer" id="archetype-detail" role="dialog" aria-modal="true" aria-labelledby="archetype-detail-title" hidden>        <div class="archetype-drawer__header">
+          <button type="button" class="archetype-drawer__close" id="archetype-detail-close" aria-label="Close archetype profile">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="4" x2="16" y2="16"/><line x1="16" y1="4" x2="4" y2="16"/></svg>
+          </button>
+        </div>
+        <div class="archetype-drawer__body">
+          <div class="archetype-drawer__hero">
+            <div class="archetype-drawer__illustration" id="archetype-detail-illustration"></div>
+            <h2 class="archetype-drawer__title" id="archetype-detail-title"></h2>
+            <p class="archetype-drawer__tagline" id="archetype-detail-tagline"></p>
+          </div>
+          <div class="archetype-drawer__content" id="archetype-detail-body">
+            <!-- Themed sections rendered by openArchetype() -->
+          </div>
+          <div class="archetype-drawer__cta">
+            <button type="button" class="archetype-drawer__practice-btn" id="archetype-practice-btn">Practice with this style</button>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <!-- Professional Footer -->
+  <footer class="site-footer" id="site-footer">
+    <div class="site-footer__inner">
+      <!-- Top grid: brand + navigation -->
+      <div class="site-footer__grid">
+        <!-- Left: Brand & manifesto -->
+        <div class="site-footer__brand-col">
+          <h3 class="site-footer__logo" id="footer-brand-home" style="cursor:pointer;">Pitch &amp; Eloquence.</h3>
+          <p class="site-footer__manifesto">
+            A private studio for the deliberate practice of public speaking &mdash; where psychology, structure, and courage converge to transform how you communicate under pressure.
+          </p>
+        </div>
+
+        <!-- Navigation columns -->
+        <div class="site-footer__nav-col">
+          <h4 class="site-footer__nav-heading site-footer__nav-heading--link" data-nav="stage">Studio</h4>
+          <ul class="site-footer__nav-list">
+            <li><button type="button" class="site-footer__link" data-nav="stage">Practice Stage</button></li>
+            <li><button type="button" class="site-footer__link" data-nav="library">Library</button></li>
+            <li><button type="button" class="site-footer__link" data-nav="navigator">Goal Navigator</button></li>
+            <li><button type="button" class="site-footer__link" data-nav="archetypes">Archetypes</button></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__nav-col">
+          <h4 class="site-footer__nav-heading site-footer__nav-heading--link" data-nav="library">Resources</h4>
+          <ul class="site-footer__nav-list">
+            <li><button type="button" class="site-footer__link" data-nav="library">TED Talk Insights</button></li>
+            <li><button type="button" class="site-footer__link" data-nav="library">Psychology Research</button></li>
+            <li><button type="button" class="site-footer__link" data-nav="library">Communication Books</button></li>
+            <li><button type="button" class="site-footer__link" data-nav="library">Personal Notes</button></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__nav-col">
+          <h4 class="site-footer__nav-heading site-footer__nav-heading--link" data-nav="navigator">Philosophy</h4>
+          <ul class="site-footer__nav-list">
+            <li><button type="button" class="site-footer__link" data-nav="navigator">Practice over talent</button></li>
+            <li><button type="button" class="site-footer__link" data-nav="navigator">Vulnerability as strength</button></li>
+            <li><button type="button" class="site-footer__link" data-nav="navigator">Structure enables freedom</button></li>
+            <li><button type="button" class="site-footer__link" data-nav="navigator">Psychology before technique</button></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom bar: legal & signature -->
+      <div class="site-footer__bottom">
+        <p class="site-footer__copyright">&copy; 2024 PitchCraft &amp; Eloquence Studio. All rights reserved.</p>
+        <span class="site-footer__divider" aria-hidden="true"></span>
+        <p class="site-footer__credit">Created by Alexander Angelov</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ARIA live regions — visually hidden, for screen reader announcements -->
+  <!-- Requirements: 8.2, 8.3 -->
+  <div id="aria-live-polite"    class="sr-only" aria-live="polite"    aria-atomic="true"></div>
+  <div id="aria-live-assertive" class="sr-only" aria-live="assertive" aria-atomic="true"></div>
+
+  <noscript>PitchCraft &amp; Eloquence Studio requires JavaScript to run.</noscript>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
