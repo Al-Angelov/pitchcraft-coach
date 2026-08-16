@@ -501,27 +501,28 @@
               <p class="navigator__empty-text">Select a goal to reveal your personalized curriculum path and strategy insights.</p>
             </div>
 
-            <!-- Lesson path as milestone cards -->
-            <div class="navigator__path-section" id="goal-path-section" hidden>
-              <h3 class="navigator__panel-heading">Your Lesson Path</h3>
-              <div class="navigator__roadmap" id="goal-path-list" aria-label="Ordered lesson path">
-                <!-- Milestone cards rendered by NavigatorController.renderGoalPath() -->
+            <!-- 1. Visual Strategy Blueprint (flow diagram) -->
+            <div class="navigator__blueprint-section" id="goal-blueprint-section" hidden>
+              <h3 class="navigator__panel-heading">Strategy Blueprint</h3>
+              <div class="navigator__blueprint-flow" id="goal-blueprint-flow" aria-label="Visual strategy flow">
+                <!-- Visual flow steps rendered by NavigatorController.renderBlueprint() -->
               </div>
             </div>
 
-            <!-- Goal-specific tips as callout blocks -->
-            <div class="navigator__tips-section" id="goal-tips-section" hidden>
-              <h3 class="navigator__panel-heading">Strategy Insights</h3>
-              <div class="navigator__tips-grid" id="goal-tips-list" aria-label="Goal-specific tips">
-                <!-- Tip callouts rendered by NavigatorController.renderTips() -->
-              </div>
-            </div>
-
-            <!-- Strategic Playbook — deep tactical content -->
+            <!-- 2. Strategic Playbook — deep tactical content -->
             <div class="navigator__playbook-section" id="goal-playbook-section" hidden>
-              <h3 class="navigator__panel-heading">Strategic Playbook</h3>
+              <h3 class="navigator__panel-heading">Detailed Playbook</h3>
               <div id="goal-playbook-list" aria-label="Strategic playbook phases">
                 <!-- Strategy cards rendered by NavigatorController.renderPlaybook() -->
+              </div>
+            </div>
+
+            <!-- 3. Lesson Path (at the bottom) — interactive cards linking to Library -->
+            <div class="navigator__path-section" id="goal-path-section" hidden>
+              <h3 class="navigator__panel-heading">Your Lesson Path</h3>
+              <p class="navigator__path-subtitle">Click any lesson to open it in the Library</p>
+              <div class="navigator__roadmap" id="goal-path-list" aria-label="Ordered lesson path">
+                <!-- Milestone cards rendered by NavigatorController.renderGoalPath() -->
               </div>
             </div>
           </div>

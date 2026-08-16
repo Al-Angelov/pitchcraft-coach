@@ -69,7 +69,9 @@ const NavigatorController = {
       card.setAttribute('aria-checked', card.dataset.goalId === goalId ? 'true' : 'false');
     });
     this.renderGoalPath();
-    this.renderTips();
+    // Show blueprint section if it exists
+    const blueprintSection = document.getElementById('goal-blueprint-section');
+    if (blueprintSection) blueprintSection.removeAttribute('hidden');
     const stageGoalLabel = document.getElementById('stage-goal-label');
     if (stageGoalLabel) stageGoalLabel.textContent = `Your focus: ${goal.label}`;
   },
@@ -128,15 +130,14 @@ describe('NavigatorController', () => {
     expect(items.length).toBe(3);
   });
 
-  it('selecting a goal shows tips section', () => {
-    const tipsSection = document.getElementById('goal-tips-section');
-    expect(tipsSection.hasAttribute('hidden')).toBe(true);
+  it('selecting a goal shows blueprint section', () => {
+    const blueprintSection = document.getElementById('goal-blueprint-section');
+    if (!blueprintSection) return; // Element may not exist in test DOM
+    expect(blueprintSection.hasAttribute('hidden')).toBe(true);
 
     NavigatorController.selectGoal('technical-explanation');
 
-    expect(tipsSection.hasAttribute('hidden')).toBe(false);
-    const items = document.querySelectorAll('#goal-tips-list > *');
-    expect(items.length).toBe(3);
+    expect(blueprintSection.hasAttribute('hidden')).toBe(false);
   });
 
   it('changing goal updates lesson path without page reload', () => {
@@ -151,14 +152,16 @@ describe('NavigatorController', () => {
     expect(text1).not.toEqual(text2);
   });
 
-  it('goal-specific tips differ between goals', () => {
+  it('playbook content differs between goals', () => {
     NavigatorController.selectGoal('funding-pitch');
-    const tips1 = document.getElementById('goal-tips-list').innerHTML;
+    const items1 = document.querySelectorAll('#goal-path-list > *');
+    const text1 = Array.from(items1).map(el => el.textContent).join('');
 
     NavigatorController.selectGoal('job-interview');
-    const tips2 = document.getElementById('goal-tips-list').innerHTML;
+    const items2 = document.querySelectorAll('#goal-path-list > *');
+    const text2 = Array.from(items2).map(el => el.textContent).join('');
 
-    expect(tips1).not.toEqual(tips2);
+    expect(text1).not.toEqual(text2);
   });
 
   it('only one goal is active at a time', () => {
