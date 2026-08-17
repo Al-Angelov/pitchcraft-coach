@@ -270,7 +270,8 @@ const NavigatorController = {
     }
 
     section.removeAttribute('hidden');
-    list.innerHTML = playbook.strategies.map(strategy => {
+    list.innerHTML = '<div class="navigator__playbook-grid">' +
+      playbook.strategies.map((strategy, i) => {
       const stepsHtml = strategy.blueprint.map(step =>
         '<li class="navigator__playbook-step">' + step + '</li>'
       ).join('');
@@ -287,24 +288,22 @@ const NavigatorController = {
         ? '<div class="navigator__psychology-block">' + strategy.psychology + '</div>'
         : '';
 
-      return '<details class="navigator__strategy-card">' +
-        '<summary class="navigator__strategy-header">' +
+      return '<article class="navigator__strategy-card">' +
+        '<div class="navigator__strategy-card-header">' +
+        '<span class="navigator__strategy-card-number">' + (i + 1) + '</span>' +
         '<span class="navigator__strategy-title">' + strategy.title + '</span>' +
-        '<svg class="navigator__strategy-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="4,6 8,10 12,6"/></svg>' +
-        '</summary>' +
-        '<div class="navigator__strategy-body">' +
+        '</div>' +
         '<p class="navigator__playbook-objective">' + strategy.objective + '</p>' +
         '<p class="navigator__playbook-label">The Approach</p>' +
         '<p class="navigator__playbook-approach">' + strategy.approach + '</p>' +
-        '<p class="navigator__playbook-label">Tactical Execution Blueprint</p>' +
+        '<p class="navigator__playbook-label">Execution Blueprint</p>' +
         '<ol class="navigator__playbook-steps">' + stepsHtml + '</ol>' +
         '<p class="navigator__playbook-label">Real-World Example</p>' +
         caseStudyHtml +
-        '<p class="navigator__playbook-label">The Psychology (Why It Works)</p>' +
+        '<p class="navigator__playbook-label">The Psychology</p>' +
         psychologyHtml +
-        '</div>' +
-        '</details>';
-    }).join('');
+        '</article>';
+    }).join('') + '</div>';
   },
 
   // ── Interactive Lesson Path (with Library deep-linking) ─────────
