@@ -290,7 +290,7 @@ const NavigatorController = {
 
       return '<article class="navigator__strategy-card">' +
         '<div class="navigator__strategy-card-header">' +
-        '<span class="navigator__strategy-card-number">' + (i + 1) + '</span>' +
+        '<span class="navigator__strategy-card-number">' + String(i + 1).padStart(2, '0') + '</span>' +
         '<span class="navigator__strategy-title">' + strategy.title + '</span>' +
         '</div>' +
         '<p class="navigator__playbook-objective">' + strategy.objective + '</p>' +
