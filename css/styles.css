@@ -3337,7 +3337,7 @@ body {
 
 
 /* ============================================================
-   NAVIGATOR BLUEPRINT — Visual strategy flow diagram
+   NAVIGATOR DIAGRAMS — SVG-based illustrative strategy frameworks
 ============================================================ */
 
 .navigator__blueprint-section[hidden] {
@@ -3345,97 +3345,257 @@ body {
 }
 
 .navigator__blueprint-flow {
-  display: flex;
-  align-items: stretch;
-  gap: 0;
-  overflow-x: auto;
   padding: var(--space-2) 0;
 }
 
-.navigator__blueprint-step {
-  flex: 1;
-  min-width: 160px;
+/* Diagram header */
+.diagram__header {
+  text-align: center;
+  margin-bottom: var(--space-3);
+}
+
+.diagram__title {
+  font-family: var(--font-serif);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--color-studio-primary);
+  margin-bottom: 0.25rem;
+}
+
+.diagram__subtitle {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  color: var(--color-studio-muted);
+  font-style: italic;
+}
+
+/* Diagram canvas — contains the SVG and positioned labels */
+.diagram__canvas {
+  position: relative;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.diagram__svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Node labels — positioned around the diagram */
+.diagram__node {
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  position: relative;
-  padding: var(--space-3) var(--space-2);
+  max-width: 120px;
 }
 
-.navigator__blueprint-step::after {
-  content: '';
-  position: absolute;
-  top: 2.5rem;
-  right: -1px;
-  width: 24px;
-  height: 2px;
-  background: var(--color-studio-primary);
-  opacity: 0.4;
-}
-
-.navigator__blueprint-step:last-child::after {
-  display: none;
-}
-
-.navigator__blueprint-step-number {
-  width: 36px;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(200, 146, 42, 0.12);
-  border: 2px solid var(--color-studio-primary);
-  border-radius: 50%;
-  font-family: var(--font-serif);
-  font-size: var(--text-sm);
-  font-weight: 700;
-  color: var(--color-studio-primary);
-  margin-bottom: var(--space-1);
-  flex-shrink: 0;
-}
-
-.navigator__blueprint-step-title {
+.diagram__node-label {
   font-family: var(--font-serif);
   font-size: var(--text-sm);
   font-weight: 700;
   color: var(--color-studio-text);
-  margin-bottom: 0.25rem;
-  line-height: 1.3;
+  line-height: 1.2;
 }
 
-.navigator__blueprint-step-timing {
+.diagram__node-desc {
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  color: var(--color-studio-muted);
+  line-height: 1.3;
+  margin-top: 0.125rem;
+}
+
+/* ── Intersection diagram (Venn-style) ── */
+.diagram--intersection {
+  position: relative;
+  min-height: 300px;
+}
+
+.diagram--intersection .diagram__node--tl { top: 4%; left: 2%; }
+.diagram--intersection .diagram__node--tr { top: 4%; right: 2%; }
+.diagram--intersection .diagram__node--bc { bottom: 2%; left: 50%; transform: translateX(-50%); }
+
+.diagram__center-badge,
+.diagram__hub-center {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: var(--color-studio-surface);
+  border: 1px solid var(--color-studio-primary);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.diagram__center-label {
+  font-family: var(--font-serif);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-studio-primary);
+}
+
+.diagram__center-desc {
+  font-family: var(--font-sans);
+  font-size: 0.6rem;
+  color: var(--color-studio-muted);
+}
+
+/* ── Layers diagram (stacked horizontal bars) ── */
+.diagram--layers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: var(--space-2) 0;
+}
+
+.diagram__layer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.625rem var(--space-3);
+  border: 1px solid;
+  border-radius: 4px;
+  transition: transform var(--transition-fast);
+}
+
+.diagram__layer:hover {
+  transform: scale(1.02);
+}
+
+.diagram__layer-label {
+  font-family: var(--font-serif);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-studio-text);
+}
+
+.diagram__layer-desc {
   font-family: var(--font-sans);
   font-size: var(--text-xs);
-  color: var(--color-studio-primary);
-  font-weight: 600;
-  margin-bottom: 0.25rem;
-}
-
-.navigator__blueprint-step-desc {
-  font-family: var(--font-sans);
-  font-size: 0.7rem;
   color: var(--color-studio-muted);
-  line-height: 1.4;
 }
 
-@media (max-width: 768px) {
-  .navigator__blueprint-flow {
-    flex-direction: column;
-    align-items: stretch;
+/* ── Cycle diagram (circular loop) ── */
+.diagram--cycle {
+  position: relative;
+  min-height: 320px;
+}
+
+.diagram--cycle .diagram__node--top { top: 2%; left: 50%; transform: translateX(-50%); }
+.diagram--cycle .diagram__node--right { top: 42%; right: 0; }
+.diagram--cycle .diagram__node--bottom { bottom: 2%; left: 50%; transform: translateX(-50%); }
+.diagram--cycle .diagram__node--left { top: 42%; left: 0; }
+
+/* ── Arc diagram (rising peak) ── */
+.diagram--arc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.diagram__arc-labels {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 var(--space-2);
+  margin-top: var(--space-2);
+}
+
+.diagram__arc-node {
+  text-align: center;
+  flex: 1;
+}
+
+.diagram__arc-node-label {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-studio-text);
+  line-height: 1.2;
+}
+
+.diagram__arc-node-desc {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  color: var(--color-studio-muted);
+}
+
+.diagram__arc-node--peak .diagram__arc-node-label {
+  color: var(--color-studio-primary);
+  font-size: var(--text-base);
+}
+
+/* ── Hub diagram (central node + spokes) ── */
+.diagram--hub {
+  position: relative;
+  min-height: 300px;
+}
+
+.diagram--hub .diagram__node--tl { top: 8%; left: 5%; }
+.diagram--hub .diagram__node--tr { top: 8%; right: 5%; }
+.diagram--hub .diagram__node--br { bottom: 8%; right: 5%; }
+.diagram--hub .diagram__node--bl { bottom: 8%; left: 5%; }
+
+.diagram--hub .diagram__hub-center {
+  top: 47%;
+}
+
+/* ── Fallback ── */
+.diagram--fallback {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--space-2);
+}
+
+.diagram__fallback-node {
+  background: var(--color-studio-surface);
+  border: 1px solid var(--color-studio-border);
+  border-left: 3px solid var(--color-studio-primary);
+  border-radius: 4px;
+  padding: var(--space-2);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.diagram__fallback-node strong {
+  font-family: var(--font-serif);
+  color: var(--color-studio-primary);
+}
+
+.diagram__fallback-node span {
+  font-size: var(--text-xs);
+  color: var(--color-studio-muted);
+}
+
+@media (max-width: 480px) {
+  .diagram__canvas {
+    max-width: 100%;
   }
-  .navigator__blueprint-step {
-    flex-direction: row;
-    text-align: left;
-    gap: var(--space-2);
-    min-width: unset;
-    padding: var(--space-1) 0;
+  .diagram__node {
+    max-width: 90px;
   }
-  .navigator__blueprint-step::after {
-    display: none;
+  .diagram__arc-labels {
+    flex-wrap: wrap;
+    gap: var(--space-1);
   }
-  .navigator__blueprint-step-number {
-    margin-bottom: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .diagram__layer:hover {
+    transform: none;
   }
 }
 
