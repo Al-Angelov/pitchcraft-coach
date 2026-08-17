@@ -591,12 +591,12 @@ const ARCHETYPES = [
     exampleExcerpt: '"We\'re not building a product. We\'re building the infrastructure for a world where no expert knowledge dies with the person who holds it. That world is ten years away — and every line of code we write this week is a brick in that road."',
     illustrationAsset: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
   <!-- Head -->
-  <circle cx="40" cy="22" r="10" stroke="#4a7c59" stroke-width="1.8"/>
+  <circle cx="40" cy="22" r="10" stroke="#c8922a" stroke-width="1.8"/>
   <!-- Body / torso -->
-  <path d="M28 60 C28 46 52 46 52 60" stroke="#4a7c59" stroke-width="1.8"/>
+  <path d="M28 60 C28 46 52 46 52 60" stroke="#c8922a" stroke-width="1.8"/>
   <!-- Arms wide open — visionary gesture -->
-  <path d="M28 48 L14 38" stroke="#4a7c59" stroke-width="1.8"/>
-  <path d="M52 48 L66 38" stroke="#4a7c59" stroke-width="1.8"/>
+  <path d="M28 48 L14 38" stroke="#c8922a" stroke-width="1.8"/>
+  <path d="M52 48 L66 38" stroke="#c8922a" stroke-width="1.8"/>
   <!-- Radiating lines above head — vision / light -->
   <line x1="40" y1="8"  x2="40" y2="4"  stroke="#c8922a" stroke-width="1.5"/>
   <line x1="33" y1="10" x2="30" y2="7"  stroke="#c8922a" stroke-width="1.5"/>
@@ -632,19 +632,19 @@ const ARCHETYPES = [
     exampleExcerpt: '"Think of it like a postal system — but one where every letter is sealed so only the recipient can open it, and the postmaster can\'t read anything. That\'s end-to-end encryption. Now let me show you exactly how we\'ve built that into every layer of what we\'re deploying."',
     illustrationAsset: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
   <!-- Head -->
-  <circle cx="40" cy="20" r="9" stroke="#5c6b7a" stroke-width="1.8"/>
+  <circle cx="40" cy="20" r="9" stroke="#c8922a" stroke-width="1.8"/>
   <!-- Body -->
-  <path d="M30 58 C30 44 50 44 50 58" stroke="#5c6b7a" stroke-width="1.8"/>
+  <path d="M30 58 C30 44 50 44 50 58" stroke="#c8922a" stroke-width="1.8"/>
   <!-- Arm pointing to board -->
-  <path d="M30 46 L18 42" stroke="#5c6b7a" stroke-width="1.8"/>
+  <path d="M30 46 L18 42" stroke="#c8922a" stroke-width="1.8"/>
   <!-- Whiteboard / panel -->
-  <rect x="4" y="30" width="16" height="18" rx="1" stroke="#8b7355" stroke-width="1.5"/>
+  <rect x="4" y="30" width="16" height="18" rx="1" stroke="#d4a843" stroke-width="1.5"/>
   <!-- Diagram on board — nodes and connector -->
-  <circle cx="9"  cy="36" r="2" stroke="#8b7355" stroke-width="1.2"/>
-  <circle cx="16" cy="36" r="2" stroke="#8b7355" stroke-width="1.2"/>
-  <line x1="11" y1="36" x2="14" y2="36" stroke="#8b7355" stroke-width="1.2"/>
-  <line x1="12" y1="36" x2="12" y2="42" stroke="#8b7355" stroke-width="1.2"/>
-  <circle cx="12" cy="44" r="2" stroke="#8b7355" stroke-width="1.2"/>
+  <circle cx="9"  cy="36" r="2" stroke="#d4a843" stroke-width="1.2"/>
+  <circle cx="16" cy="36" r="2" stroke="#d4a843" stroke-width="1.2"/>
+  <line x1="11" y1="36" x2="14" y2="36" stroke="#d4a843" stroke-width="1.2"/>
+  <line x1="12" y1="36" x2="12" y2="42" stroke="#d4a843" stroke-width="1.2"/>
+  <circle cx="12" cy="44" r="2" stroke="#d4a843" stroke-width="1.2"/>
 </svg>`,
     mappedGoalId: 'technical-explanation'
   },
@@ -674,13 +674,13 @@ const ARCHETYPES = [
     exampleExcerpt: '"The first time I had to lay someone off, I rehearsed it fourteen times. I still got it wrong. I\'m going to tell you what I wish I\'d known — not as a framework, but as the person who made every mistake on your behalf."',
     illustrationAsset: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
   <!-- Head -->
-  <circle cx="40" cy="21" r="9" stroke="#8b4513" stroke-width="1.8"/>
+  <circle cx="40" cy="21" r="9" stroke="#c8922a" stroke-width="1.8"/>
   <!-- Body — leaning slightly forward, engaged -->
-  <path d="M30 58 C29 44 51 44 50 58" stroke="#8b4513" stroke-width="1.8"/>
+  <path d="M30 58 C29 44 51 44 50 58" stroke="#c8922a" stroke-width="1.8"/>
   <!-- One hand extended open — invitation gesture -->
-  <path d="M30 46 L20 52" stroke="#8b4513" stroke-width="1.8"/>
-  <path d="M20 52 L16 50" stroke="#8b4513" stroke-width="1.4"/>
-  <path d="M20 52 L18 55" stroke="#8b4513" stroke-width="1.4"/>
+  <path d="M30 46 L20 52" stroke="#c8922a" stroke-width="1.8"/>
+  <path d="M20 52 L16 50" stroke="#c8922a" stroke-width="1.4"/>
+  <path d="M20 52 L18 55" stroke="#c8922a" stroke-width="1.4"/>
   <!-- Heart shape above — empathy symbol -->
   <path d="M36 10 C36 7 33 6 33 9 C33 11 36 14 36 14 C36 14 39 11 39 9 C39 6 36 7 36 10 Z" stroke="#c8922a" stroke-width="1.4"/>
 </svg>`,
@@ -712,12 +712,12 @@ const ARCHETYPES = [
     exampleExcerpt: '"Every person in this room has told a founder to go find more traction before coming back. I\'m going to show you the data on what that advice actually costs — in missed returns, in markets ceded, and in the specific companies you passed on that are now worth ten figures."',
     illustrationAsset: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
   <!-- Head -->
-  <circle cx="40" cy="20" r="9" stroke="#2c2416" stroke-width="1.8"/>
+  <circle cx="40" cy="20" r="9" stroke="#c8922a" stroke-width="1.8"/>
   <!-- Body — upright, assured stance -->
-  <path d="M30 58 C30 44 50 44 50 58" stroke="#2c2416" stroke-width="1.8"/>
+  <path d="M30 58 C30 44 50 44 50 58" stroke="#c8922a" stroke-width="1.8"/>
   <!-- One arm raised with pointing finger — challenging gesture -->
-  <path d="M50 46 L62 36" stroke="#2c2416" stroke-width="1.8"/>
-  <line x1="62" y1="36" x2="62" y2="30" stroke="#2c2416" stroke-width="1.4"/>
+  <path d="M50 46 L62 36" stroke="#c8922a" stroke-width="1.8"/>
+  <line x1="62" y1="36" x2="62" y2="30" stroke="#c8922a" stroke-width="1.4"/>
   <!-- Broken line / crack — dismantling assumptions -->
   <path d="M10 40 L20 35 L16 45 L26 40" stroke="#c8922a" stroke-width="1.6" stroke-dasharray="2 2"/>
   <!-- Exclamation mark — provocation symbol -->
