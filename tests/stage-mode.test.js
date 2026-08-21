@@ -50,15 +50,12 @@ const SESSION_MODES = [
     { name: 'Synthesis', startPercent: 0.65, endPercent: 0.85 },
     { name: 'Close', startPercent: 0.85, endPercent: 1.0 }
   ]},
-  { id: 'deep-dive-30m', label: '30-Minute Deep-Dive Presentation', durationSeconds: 1800, isFreeMode: false, phases: [
-    { name: 'Intro', startPercent: 0, endPercent: 0.08 },
-    { name: 'Background', startPercent: 0.08, endPercent: 0.20 },
-    { name: 'Analysis 1', startPercent: 0.20, endPercent: 0.35 },
-    { name: 'Analysis 2', startPercent: 0.35, endPercent: 0.50 },
-    { name: 'Analysis 3', startPercent: 0.50, endPercent: 0.65 },
-    { name: 'Synthesis', startPercent: 0.65, endPercent: 0.80 },
-    { name: 'Q&A Prep', startPercent: 0.80, endPercent: 0.92 },
-    { name: 'Close', startPercent: 0.92, endPercent: 1.0 }
+  { id: 'quick-3m', label: '3-Minute Quick Pitch', durationSeconds: 180, isFreeMode: false, phases: [
+    { name: 'Hook', startPercent: 0, endPercent: 0.20 },
+    { name: 'Problem', startPercent: 0.20, endPercent: 0.40 },
+    { name: 'Solution', startPercent: 0.40, endPercent: 0.65 },
+    { name: 'Proof', startPercent: 0.65, endPercent: 0.85 },
+    { name: 'CTA', startPercent: 0.85, endPercent: 1.0 }
   ]},
   { id: 'free', label: 'Free Mode', durationSeconds: 0, isFreeMode: true, phases: [] }
 ];
@@ -122,7 +119,7 @@ describe('StageController — Mode Selection', () => {
   });
 
   it('all 5 modes are selectable — clicking each sets aria-checked="true"', () => {
-    const modeIds = ['elevator-60', 'startup-5m', 'presentation-15m', 'deep-dive-30m', 'free'];
+    const modeIds = ['elevator-60', 'quick-3m', 'startup-5m', 'presentation-15m', 'free'];
     modeIds.forEach(id => {
       StageController.selectMode(id);
       const card = document.querySelector(`[data-mode-id="${id}"]`);
@@ -174,8 +171,8 @@ describe('StageController — Mode Selection', () => {
   });
 
   it('AppState.session.mode is updated after selectMode', () => {
-    StageController.selectMode('deep-dive-30m');
-    expect(AppState.session.mode.id).toBe('deep-dive-30m');
-    expect(AppState.session.mode.durationSeconds).toBe(1800);
+    StageController.selectMode('quick-3m');
+    expect(AppState.session.mode.id).toBe('quick-3m');
+    expect(AppState.session.mode.durationSeconds).toBe(180);
   });
 });
