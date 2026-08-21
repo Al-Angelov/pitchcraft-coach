@@ -14,6 +14,19 @@ const SESSION_MODES = [
     ]
   },
   {
+    id: 'quick-3m',
+    label: '3-Minute Quick Pitch',
+    durationSeconds: 180,
+    isFreeMode: false,
+    phases: [
+      { name: 'Hook',     startPercent: 0,    endPercent: 0.20 },
+      { name: 'Problem',  startPercent: 0.20, endPercent: 0.40 },
+      { name: 'Solution', startPercent: 0.40, endPercent: 0.65 },
+      { name: 'Proof',    startPercent: 0.65, endPercent: 0.85 },
+      { name: 'CTA',      startPercent: 0.85, endPercent: 1.0  }
+    ]
+  },
+  {
     id: 'startup-5m',
     label: '5-Minute Startup Demo',
     durationSeconds: 300,
@@ -38,19 +51,6 @@ const SESSION_MODES = [
       { name: 'Core 2',    startPercent: 0.45, endPercent: 0.65 },
       { name: 'Synthesis', startPercent: 0.65, endPercent: 0.85 },
       { name: 'Close',     startPercent: 0.85, endPercent: 1.0  }
-    ]
-  },
-  {
-    id: 'quick-3m',
-    label: '3-Minute Quick Pitch',
-    durationSeconds: 180,
-    isFreeMode: false,
-    phases: [
-      { name: 'Hook',     startPercent: 0,    endPercent: 0.20 },
-      { name: 'Problem',  startPercent: 0.20, endPercent: 0.40 },
-      { name: 'Solution', startPercent: 0.40, endPercent: 0.65 },
-      { name: 'Proof',    startPercent: 0.65, endPercent: 0.85 },
-      { name: 'CTA',      startPercent: 0.85, endPercent: 1.0  }
     ]
   },
   {
