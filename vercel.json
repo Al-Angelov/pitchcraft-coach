@@ -1,5 +1,14 @@
 {
   "version": 2,
+  "functions": {
+    "api/transcribe.js": {
+      "maxDuration": 60,
+      "memory": 1024
+    },
+    "api/feedback.js": {
+      "maxDuration": 30
+    }
+  },
   "headers": [
     {
       "source": "/(.*)",

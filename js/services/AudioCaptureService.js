@@ -39,19 +39,35 @@ const AudioCaptureService = {
 
   /**
    * Start recording. Requires prior successful requestMicrophone().
-   * Initializes MediaRecorder and begins collecting chunks.
+   * Initializes MediaRecorder with optimized settings for upload size.
+   * Uses timeslice to collect data in smaller chunks.
    * Requirements: 3.1
    */
   start() {
     if (!this._stream) return;
     this._chunks = [];
-    this._recorder = new MediaRecorder(this._stream);
+
+    // Use lower bitrate to keep file sizes manageable for serverless upload
+    const options = {};
+    if (MediaRecorder.isTypeSupported('audio/webm;codecs=opus')) {
+      options.mimeType = 'audio/webm;codecs=opus';
+    }
+    options.audioBitsPerSecond = 32000; // 32kbps — good speech quality, small files
+
+    try {
+      this._recorder = new MediaRecorder(this._stream, options);
+    } catch (e) {
+      // Fallback: no options if browser rejects them
+      this._recorder = new MediaRecorder(this._stream);
+    }
+
     this._recorder.ondataavailable = (e) => {
       if (e.data.size > 0) {
         this._chunks.push(e.data);
       }
     };
-    this._recorder.start();
+    // Collect data every 1 second (timeslice) to avoid one giant buffer at stop
+    this._recorder.start(1000);
     this._isRecording = true;
   },
 
