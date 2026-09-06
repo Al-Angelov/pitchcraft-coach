@@ -745,26 +745,73 @@ body {
 
 /* Narrow viewport adjustments */
 @media (max-width: 375px) {
-  .app-header {
-    padding: 0 var(--space-2);
-  }
-
   .app-header__brand-text {
     font-size: var(--text-sm);
   }
 
   .nav__tab {
-    padding: 0 var(--space-1);
     font-size: var(--text-xs);
   }
 }
 
-@media (max-width: 600px) {
+/* ── Mobile header: two-row layout ──
+   Row 1: Logo (left) + Auth button (right)
+   Row 2: Nav tabs, centered and fully visible (no clipping/scroll)
+   Uses flex-wrap + order to restructure without changing the HTML. */
+@media (max-width: 700px) {
+  .app-header {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 0.5rem var(--space-3);
+    row-gap: 0.25rem;
+  }
+
+  .app-header__brand {
+    order: 1;
+    margin-right: 0;
+  }
+
+  .app-header__auth {
+    order: 2;
+    margin-left: auto; /* pin to the right on the top row */
+  }
+
   .app-header__nav {
-    /* Take remaining space and scroll horizontally instead of clipping */
-    flex: 1 1 auto;
-    min-width: 0;
-    justify-content: flex-start;
+    order: 3;
+    flex: 1 0 100%;      /* full width -> forces onto its own second row */
+    justify-content: center;
+    overflow-x: visible; /* no horizontal scroll — tabs are fully visible */
+    height: auto;
+  }
+
+  /* Let tabs breathe and wrap if truly necessary on very narrow screens */
+  .app-header__nav .nav__tab {
+    height: 2.5rem;
+    flex-shrink: 1;
+  }
+
+  /* Taller header now — push body content and studio below it */
+  body {
+    padding-top: 5.25rem;
+  }
+
+  #studio {
+    min-height: calc(100vh - 5.25rem);
+  }
+
+  /* Full-screen overlays that sit below the fixed header */
+  .reader {
+    top: 5.25rem;
+  }
+}
+
+/* Very narrow: allow nav tabs to wrap to multiple centered rows if needed */
+@media (max-width: 380px) {
+  .app-header__nav {
+    flex-wrap: wrap;
+  }
+  .nav__tab {
+    padding: 0 var(--space-2);
   }
 }
 
@@ -1427,11 +1474,11 @@ body {
   padding: var(--space-3) var(--space-2);
 }
 
-/* Mobile: full-width overlay */
+/* Mobile: full-width overlay (sits below the taller two-row header) */
 @media (max-width: 768px) {
   .history-panel {
     position: fixed;
-    top: 3.25rem;
+    top: 5.25rem;
     left: 0;
     right: 0;
     bottom: 0;
