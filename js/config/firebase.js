@@ -2,7 +2,8 @@
 // Dedicated Firebase initialization — creates the App, Auth, and Firestore
 // instances used across the app. Import { auth, db } (or firebaseApp) from here.
 //
-// Uses the Firebase v10 modular SDK loaded from the official CDN via ES modules.
+// Config is read from Vite environment variables (VITE_FIREBASE_*), defined in
+// a local .env file (see .env.example) and injected at build time by Vite.
 //
 // NOTE: The Firebase web API key is NOT a secret — it identifies the project and
 // is safe to ship in client code. Access is controlled by Firebase Auth settings
@@ -13,18 +14,16 @@ import { getAuth } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-aut
 import { getFirestore } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyCrv6efd0E76wCDeU8SXYVmtvDrFy07NdY',
-  authDomain: 'pitchcraft-coach.firebaseapp.com',
-  projectId: 'pitchcraft-coach',
-  storageBucket: 'pitchcraft-coach.firebasestorage.app',
-  messagingSenderId: '408778304783',
-  appId: '1:408778304783:web:4fcbbcdcbd082775fc227a'
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
-// Initialize Firebase
 const firebaseApp = initializeApp(firebaseConfig);
 
-// Initialize and export the services the app uses
 const auth = getAuth(firebaseApp);
 const db = getFirestore(firebaseApp);
 

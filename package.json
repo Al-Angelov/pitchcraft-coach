@@ -4,7 +4,10 @@
   "description": "PitchCraft & Eloquence Studio",
   "type": "module",
   "scripts": {
-    "dev": "vercel dev",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "dev:vercel": "vercel dev",
     "test": "vitest --run",
     "test:watch": "vitest"
   },
@@ -12,7 +15,8 @@
     "@vitest/coverage-v8": "^1.6.0",
     "fast-check": "^3.22.0",
     "jsdom": "^24.0.0",
-    "vercel": "^59.0.0",
+    "vercel": "^59.11.7",
+    "vite": "^5.4.21",
     "vitest": "^1.6.0"
   }
 }
