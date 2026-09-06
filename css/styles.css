@@ -2735,7 +2735,8 @@ body {
 .site-footer {
   background: var(--color-studio-bg);
   border-top: 1px solid rgba(200, 146, 42, 0.12);
-  padding: var(--space-8) 0 0;
+  /* Bottom padding clears the fixed 26px status bar so the copyright is never crowded */
+  padding: var(--space-8) 0 calc(26px + var(--space-3));
   margin-top: var(--space-8);
 }
 
@@ -4052,9 +4053,10 @@ body {
   align-items: center;
   justify-content: center;
   padding: var(--space-4);
-  background: rgba(26, 18, 8, 0.55);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+  /* Softer, more integrated backdrop — a gentle warm veil rather than a hard scrim */
+  background: rgba(26, 18, 8, 0.28);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
 }
 
 .stage-auth-overlay[hidden] {
@@ -4064,11 +4066,12 @@ body {
 .stage-auth-overlay__panel {
   max-width: 30rem;
   text-align: center;
-  background: var(--color-studio-surface);
-  border: 1px solid var(--color-studio-primary);
-  border-radius: 8px;
+  /* Slightly translucent surface with a subtle gold hairline — feels part of the page */
+  background: rgba(36, 28, 18, 0.92);
+  border: 1px solid rgba(200, 146, 42, 0.25);
+  border-radius: 10px;
   padding: var(--space-6) var(--space-4);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
 }
 
 .stage-auth-overlay__icon {
@@ -4355,9 +4358,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 0.75rem;
-  background: #12100a;
-  border-top: 1px solid rgba(200, 146, 42, 0.12);
+  padding: 0 var(--space-4);
+  /* Match the main nav bar (.app-header) precisely */
+  background: rgba(26, 18, 8, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(200, 146, 42, 0.1);
   font-family: var(--font-sans);
   font-size: 0.72rem;
   color: var(--color-studio-muted);
