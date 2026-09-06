@@ -620,6 +620,23 @@ html, body {
   align-items: stretch;
   gap: 0;
   height: 100%;
+  /* Allow horizontal scrolling if tabs overflow the available width */
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox — hide scrollbar */
+  -ms-overflow-style: none; /* IE/legacy Edge */
+}
+
+/* Hide scrollbar in WebKit browsers (Chrome, Safari, Edge) */
+.app-header__nav::-webkit-scrollbar {
+  display: none;
+}
+
+/* Tabs must not shrink — keeps labels legible and swipeable */
+.app-header__nav .nav__tab {
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 /* Individual tab button — elegant serif labels */
@@ -744,8 +761,10 @@ body {
 
 @media (max-width: 600px) {
   .app-header__nav {
-    flex: 1;
-    justify-content: flex-end;
+    /* Take remaining space and scroll horizontally instead of clipping */
+    flex: 1 1 auto;
+    min-width: 0;
+    justify-content: flex-start;
   }
 }
 
@@ -4006,6 +4025,7 @@ body {
 /* ── Header auth button ── */
 .app-header__auth {
   margin-left: auto;
+  flex-shrink: 0;
   appearance: none;
   background: none;
   border: 1px solid var(--color-studio-border);
