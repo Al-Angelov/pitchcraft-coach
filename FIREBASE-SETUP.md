@@ -74,21 +74,23 @@ service cloud.firestore {
 
 ## 5. Add Your Config to the App
 
-Open `index.html` and find the `window.FIREBASE_CONFIG` block near the bottom.
-Replace the placeholder values with your project's config:
+Firebase is initialized in a dedicated file: **`js/config/firebase.js`**.
+Replace the `firebaseConfig` object there with your project's values:
 
-```html
-<script>
-  window.FIREBASE_CONFIG = {
-    apiKey: "AIza...",
-    authDomain: "pitchcraft-coach.firebaseapp.com",
-    projectId: "pitchcraft-coach",
-    storageBucket: "pitchcraft-coach.appspot.com",
-    messagingSenderId: "1234567890",
-    appId: "1:1234567890:web:abcdef123456"
-  };
-</script>
+```javascript
+// js/config/firebase.js
+const firebaseConfig = {
+  apiKey: "AIza...",
+  authDomain: "pitchcraft-coach.firebaseapp.com",
+  projectId: "pitchcraft-coach",
+  storageBucket: "pitchcraft-coach.firebasestorage.app",
+  messagingSenderId: "1234567890",
+  appId: "1:1234567890:web:abcdef123456"
+};
 ```
+
+This file initializes the Firebase App, Auth, and Firestore, and exports the
+`auth` and `db` instances that `FirebaseService.js` consumes.
 
 > The Firebase web API key is **not secret** — it identifies your project and is
 > safe to expose in client code. Security is enforced by the Firestore rules and
@@ -96,9 +98,9 @@ Replace the placeholder values with your project's config:
 
 ## 6. Local Development
 
-If `window.FIREBASE_CONFIG` still contains `YOUR_...` placeholders, the app
+If the Firebase instances fail to initialize (e.g. invalid config), the app
 **gracefully degrades**: the Stage stays unlocked and no credit tracking occurs,
-so you can develop locally without a Firebase project. Configure it when you're
+so you can still develop locally. Configure `js/config/firebase.js` when you're
 ready to test the full auth + credit flow.
 
 ## 7. How Credits Work

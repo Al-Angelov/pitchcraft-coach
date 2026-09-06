@@ -687,18 +687,7 @@
     </div>
   </div>
 
-  <!-- Firebase configuration — replace with your project's values.
-       For production, inject these at build/deploy time. -->
-  <script>
-    window.FIREBASE_CONFIG = {
-      apiKey: "YOUR_FIREBASE_API_KEY",
-      authDomain: "YOUR_PROJECT.firebaseapp.com",
-      projectId: "YOUR_PROJECT_ID",
-      storageBucket: "YOUR_PROJECT.appspot.com",
-      messagingSenderId: "YOUR_SENDER_ID",
-      appId: "YOUR_APP_ID"
-    };
-  </script>
+  <!-- Firebase is initialized in js/config/firebase.js (imported by the app modules). -->
 
   <noscript>PitchCraft &amp; Eloquence Studio requires JavaScript to run.</noscript>
   <script type="module" src="js/app.js"></script>

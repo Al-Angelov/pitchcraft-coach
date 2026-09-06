@@ -1,15 +1,13 @@
 // js/services/FirebaseService.js
 // Firebase Authentication + Firestore integration for auth & credit tracking.
 //
-// Uses the Firebase v10 modular SDK loaded from the official CDN via ES module
-// imports. Configuration is read from window.FIREBASE_CONFIG (set in a small
-// inline script in index.html or via env injection at deploy time).
+// Consumes the initialized `auth` and `db` instances from js/config/firebase.js.
+// Uses the Firebase v10 modular SDK function imports for the specific operations.
 //
 // New users get 15 free session credits. Each completed session deducts 1.
 
-import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js';
+import { auth, db } from '../config/firebase.js';
 import {
-  getAuth,
   onAuthStateChanged,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
@@ -18,7 +16,6 @@ import {
   signInWithPopup
 } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js';
 import {
-  getFirestore,
   doc,
   getDoc,
   setDoc,
@@ -30,7 +27,6 @@ import {
 const STARTING_CREDITS = 15;
 
 const FirebaseService = {
-  _app: null,
   _auth: null,
   _db: null,
   _ready: false,
@@ -41,21 +37,19 @@ const FirebaseService = {
   _onCreditsChange: null, // (credits) => void
 
   /**
-   * Initialize Firebase. Returns true if config present and init succeeded.
-   * Safe to call once at startup.
+   * Initialize the service using the pre-initialized Firebase instances.
+   * Returns true if Auth/Firestore are available. Safe to call once at startup.
    */
   init() {
-    const config = (typeof window !== 'undefined') ? window.FIREBASE_CONFIG : null;
-    if (!config || !config.apiKey || config.apiKey.indexOf('YOUR_') === 0) {
-      console.warn('[Firebase] No valid config found (window.FIREBASE_CONFIG). Auth features disabled.');
+    if (!auth || !db) {
+      console.warn('[Firebase] Auth/Firestore instances unavailable. Auth features disabled.');
       this._ready = false;
       return false;
     }
 
     try {
-      this._app = initializeApp(config);
-      this._auth = getAuth(this._app);
-      this._db = getFirestore(this._app);
+      this._auth = auth;
+      this._db = db;
       this._ready = true;
 
       // Listen for auth state changes
