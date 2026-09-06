@@ -18,9 +18,12 @@ const StageController = {
   _curveballScheduledAt: null,
 
   init() {
-    // Attach click handlers to mode cards
+    // Attach click handlers to mode cards (skip disabled/locked cards)
     const modeCards = document.querySelectorAll('.stage__mode-card');
     modeCards.forEach(card => {
+      if (card.classList.contains('stage__mode-card--locked') || card.getAttribute('aria-disabled') === 'true') {
+        return; // Locked cards (e.g. Free Mode "Coming Soon") are not selectable
+      }
       card.addEventListener('click', () => {
         this.selectMode(card.dataset.modeId);
       });
@@ -69,6 +72,9 @@ const StageController = {
   selectMode(modeId) {
     const mode = SESSION_MODES.find(m => m.id === modeId);
     if (!mode) return;
+
+    // Free Mode is locked during beta — guard against accidental selection
+    if (mode.isFreeMode) return;
 
     // Update AppState
     AppState.session.mode = mode;
