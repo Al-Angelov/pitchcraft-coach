@@ -5,6 +5,7 @@ import { AccessibilityService } from '../services/AccessibilityService.js';
 import { SessionHistoryService } from '../services/SessionHistoryService.js';
 import { RecordingPanelController } from './RecordingPanelController.js';
 import { HistoryPanelController } from './HistoryPanelController.js';
+import { AuthController } from './AuthController.js';
 
 /* ============================================================
    StageController — session mode selection and session management
@@ -140,6 +141,18 @@ const StageController = {
     const mode = AppState.session.mode;
     if (!mode) return;
 
+    // Credit gate — require a signed-in user with remaining credits
+    if (!AuthController.canStartSession()) {
+      const outOfCredits = document.getElementById('stage-out-of-credits');
+      if (AppState.user && AppState.credits !== null && AppState.credits <= 0) {
+        if (outOfCredits) outOfCredits.hidden = false;
+        AccessibilityService.announce('You are out of free sessions.', 'assertive');
+      } else {
+        AccessibilityService.announce('Please sign in to start a session.', 'assertive');
+      }
+      return;
+    }
+
     // Reset session state
     AppState.session.status = 'running';
     AppState.session.elapsed = 0;
@@ -147,6 +160,8 @@ const StageController = {
     AppState.session.curveballsShown = [];
     AppState.session.recording = false;
     AppState.session.transcript = null;
+    // Reset the per-session credit-deduction guard
+    RecordingPanelController._creditDeductedForSession = false;
     this._pausedElapsed = 0;
     this._lastPhaseIndex = -1;
     this._startTime = performance.now();

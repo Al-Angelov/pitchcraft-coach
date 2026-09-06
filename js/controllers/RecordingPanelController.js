@@ -5,6 +5,7 @@ import { TranscriptionService } from '../services/TranscriptionService.js';
 import { AiFeedbackService } from '../services/AiFeedbackService.js';
 import { SessionHistoryService } from '../services/SessionHistoryService.js';
 import { AccessibilityService } from '../services/AccessibilityService.js';
+import { FirebaseService } from '../services/FirebaseService.js';
 import { HistoryPanelController } from './HistoryPanelController.js';
 
 /* ============================================================
@@ -14,6 +15,7 @@ import { HistoryPanelController } from './HistoryPanelController.js';
 ============================================================ */
 const RecordingPanelController = {
   _stopInProgress: false,
+  _creditDeductedForSession: false,
 
   show() {
     // Recording visual state is now part of the active-session-deck
@@ -116,6 +118,19 @@ const RecordingPanelController = {
 
   showTranscript(text) {
     AppState.session.transcript = text;
+
+    // Deduct 1 credit on successful transcription (guard against double-deduct)
+    if (!this._creditDeductedForSession) {
+      this._creditDeductedForSession = true;
+      if (FirebaseService.isReady() && AppState.user) {
+        FirebaseService.deductCredit().then((res) => {
+          if (!res.success) {
+            console.warn('[Credits] Deduction failed:', res.error);
+          }
+          // Live credit count updates automatically via the Firestore onSnapshot listener
+        });
+      }
+    }
 
     // Persist transcript to the most recent session history record
     SessionHistoryService.updateLatest({ transcript: text });

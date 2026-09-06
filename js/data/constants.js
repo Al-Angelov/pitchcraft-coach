@@ -737,6 +737,10 @@ const AppState = {
   curveballsEnabled: true,
   historyPanelOpen: false,
 
+  // Auth & credit state (Firebase)
+  user: null,       // Firebase user object (null = signed out)
+  credits: null,    // Number of remaining sessions (null = unknown/not loaded)
+
   init() {
     this.screen = 'landing';
     this.activeModule = 'stage';
@@ -748,6 +752,7 @@ const AppState = {
     this.searchQuery = '';
     this.curveballsEnabled = true;
     this.historyPanelOpen = false;
+    // Do NOT reset user/credits on init — auth state is managed by Firebase listener
   }
 };
 

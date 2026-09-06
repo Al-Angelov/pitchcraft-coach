@@ -10,6 +10,8 @@ import { LibraryController } from './controllers/LibraryController.js';
 import { NavigatorController } from './controllers/NavigatorController.js';
 import { ArchetypesController } from './controllers/ArchetypesController.js';
 import { HistoryPanelController } from './controllers/HistoryPanelController.js';
+import { AuthController } from './controllers/AuthController.js';
+import { STARTING_CREDITS } from './services/FirebaseService.js';
 
 /* ============================================================
    Initialization — wire up all controllers on DOMContentLoaded
@@ -26,6 +28,43 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── Session History — load from localStorage and init panel ──
   SessionHistoryService.loadHistory();
   HistoryPanelController.init();
+
+  // ── Auth & Credits — init Firebase auth, Stage lock, status bar ──
+  AuthController.init();
+
+  const statusCreditsText = document.getElementById('status-credits-text');
+  const statusCreditsItem = document.getElementById('status-credits');
+
+  function renderStatusBar({ user, credits }) {
+    if (!statusCreditsText) return;
+
+    if (!user) {
+      statusCreditsText.textContent = 'Sign in for free sessions';
+      if (statusCreditsItem) {
+        statusCreditsItem.classList.remove('status-bar__item--low', 'status-bar__item--empty');
+      }
+      return;
+    }
+
+    const total = STARTING_CREDITS;
+    const remaining = (credits === null || credits === undefined) ? '—' : credits;
+    statusCreditsText.textContent = `Sessions Remaining: ${remaining} / ${total}`;
+
+    if (statusCreditsItem) {
+      statusCreditsItem.classList.remove('status-bar__item--low', 'status-bar__item--empty');
+      if (typeof credits === 'number') {
+        if (credits <= 0) {
+          statusCreditsItem.classList.add('status-bar__item--empty');
+        } else if (credits <= 3) {
+          statusCreditsItem.classList.add('status-bar__item--low');
+        }
+      }
+    }
+  }
+
+  AuthController.onStatusUpdate(renderStatusBar);
+  // Render initial state
+  renderStatusBar({ user: AppState.user, credits: AppState.credits });
 
   // ── Brand logo — return to landing/home ─────────────────────
   const brandHome = document.getElementById('brand-home');
