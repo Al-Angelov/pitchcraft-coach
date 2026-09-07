@@ -1405,6 +1405,42 @@ body {
   opacity: 1;
 }
 
+/* "Back to Practice Stage" button inside the history panel */
+.history-panel__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  width: 100%;
+  appearance: none;
+  background: none;
+  border: 1px solid var(--color-studio-border);
+  border-radius: 4px;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: var(--space-2);
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-studio-primary);
+  cursor: pointer;
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+}
+
+.history-panel__back:hover {
+  border-color: var(--color-studio-primary);
+  background: rgba(200, 146, 42, 0.06);
+}
+
+.history-panel__back:focus-visible {
+  outline: 3px solid var(--color-focus-ring);
+  outline-offset: 2px;
+}
+
+.history-panel__back svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
 .history-panel__heading {
   font-family: var(--font-serif);
   font-size: var(--text-sm);
@@ -2287,6 +2323,25 @@ body {
 @media (max-width: 768px) {
   .navigator__layout {
     grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+  /* Sidebar must not stick on mobile — it stacks above the content and
+     sticky positioning causes it to overlap the panel below it. */
+  .navigator__sidebar {
+    position: static;
+    top: auto;
+  }
+  /* Goal pills flow horizontally so they don't consume a tall column */
+  .navigator__goal-pills {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .navigator__pill {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+  .navigator__main-panel {
+    min-width: 0;
   }
 }
 
@@ -2787,10 +2842,29 @@ body {
   outline-offset: 2px;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
+  /* On mobile the drawer becomes a full-screen panel (fixed to the viewport)
+     so it never leaves broken blank space beside a partial pop-in. */
   .archetype-drawer {
+    position: fixed;
+    top: 3.25rem;          /* below the fixed header */
+    left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
-    min-width: unset;
+    min-width: 0;
+    max-width: none;
+    min-height: 0;
+    border-left: none;
+    overflow-y: auto;
+    z-index: 60;
+  }
+}
+
+/* Match the two-row mobile header height so the drawer clears it */
+@media (max-width: 700px) {
+  .archetype-drawer {
+    top: 5.25rem;
   }
 }
 
@@ -3490,13 +3564,17 @@ body {
 .diagram__canvas {
   margin: 0 auto;
   max-width: 520px;
+  width: 100%;
   padding: var(--space-4);
   background: var(--color-studio-surface);
   border: 1px solid var(--color-studio-border);
   border-radius: 8px;
+  box-sizing: border-box;
+  overflow: hidden; /* clip any node that would push past the rounded card */
 }
 
 .diagram__svg {
+  max-width: 100%;
   width: 100%;
   height: auto;
   display: block;
@@ -3924,9 +4002,23 @@ body {
   .diagram--hub .diagram__node--br,
   .diagram--hub .diagram__node--bl {
     grid-column: 1;
+    grid-row: auto;
+    width: 100%;
+  }
+  /* Center badges also flow into the single column instead of overlapping */
+  .diagram--intersection .diagram__center-badge,
+  .diagram--hub .diagram__hub-center {
+    grid-column: 1;
+    grid-row: auto;
   }
   .diagram__arc-labels {
     grid-template-columns: repeat(2, 1fr);
+  }
+  /* Nodes span the full mobile column for easy reading */
+  .diagram__node {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 

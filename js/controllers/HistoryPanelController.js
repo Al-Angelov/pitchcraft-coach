@@ -20,6 +20,12 @@ const HistoryPanelController = {
       toggleBtn.addEventListener('click', () => this.toggle());
     }
 
+    // "Back to Practice Stage" button inside the panel
+    const backBtn = document.getElementById('history-back');
+    if (backBtn) {
+      backBtn.addEventListener('click', () => this.closePanel());
+    }
+
     // Session detail close button
     const closeBtn = document.getElementById('session-detail-close');
     if (closeBtn) {
