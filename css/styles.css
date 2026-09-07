@@ -102,6 +102,15 @@ html, body {
   background-color: var(--color-studio-bg);
 }
 
+/* Guard against any component (e.g. sliding drawers) creating a horizontal
+   scroll / sideways viewport jump on small screens. */
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+}
+
 .container {
   max-width: 72rem;
   margin-inline: auto;
@@ -2857,8 +2866,22 @@ body {
     min-height: 0;
     border-left: none;
     overflow-y: auto;
+    overflow-x: hidden;
     z-index: 60;
+    /* Use a vertical fade-up slide on mobile — a horizontal translateX(100%)
+       would extend the page width and cause a sideways viewport jump. */
+    animation: drawer-slide-up 0.28s ease forwards;
   }
+
+  /* The Archetypes section must never create horizontal scroll on mobile */
+  #archetypes {
+    overflow-x: hidden;
+  }
+}
+
+@keyframes drawer-slide-up {
+  from { transform: translateY(16px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
 
 /* Match the two-row mobile header height so the drawer clears it */
